@@ -1,2 +1,300 @@
 /* For information on how to create your own theme, please refer to:
 http://ionicframework.com/docs/theming/ */
+:root {
+  --ion-color-primary: #247a4b;
+  --ion-color-primary-rgb: 36, 122, 75;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #206b42;
+  --ion-color-primary-tint: #3a875d;
+
+  --ion-color-secondary: #f4c542;
+  --ion-color-secondary-rgb: 244, 197, 66;
+  --ion-color-secondary-contrast: #233127;
+  --ion-color-secondary-contrast-rgb: 35, 49, 39;
+  --ion-color-secondary-shade: #d7ad3a;
+  --ion-color-secondary-tint: #f5cb55;
+
+  --ion-color-tertiary: #eaf5ee;
+  --ion-color-tertiary-rgb: 234, 245, 238;
+  --ion-color-tertiary-contrast: #1f6f46;
+  --ion-color-tertiary-contrast-rgb: 31, 111, 70;
+  --ion-color-tertiary-shade: #ced8d1;
+  --ion-color-tertiary-tint: #ecf6f0;
+
+  --ion-color-success: #2f8f5b;
+  --ion-color-success-rgb: 47, 143, 91;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #297e50;
+  --ion-color-success-tint: #449a6b;
+
+  --ion-color-warning: #f4c542;
+  --ion-color-warning-rgb: 244, 197, 66;
+  --ion-color-warning-contrast: #233127;
+  --ion-color-warning-contrast-rgb: 35, 49, 39;
+  --ion-color-warning-shade: #d7ad3a;
+  --ion-color-warning-tint: #f5cb55;
+
+  --ion-color-medium: #eef1ed;
+  --ion-color-medium-rgb: 238, 241, 237;
+  --ion-color-medium-contrast: #4d5a52;
+  --ion-color-medium-contrast-rgb: 77, 90, 82;
+  --ion-color-medium-shade: #d1d4d1;
+  --ion-color-medium-tint: #f0f2ef;
+
+  --ion-background-color: #fbfdf9;
+  --ion-text-color: #1b2f25;
+  --ion-toolbar-background: #ffffff;
+  --ion-toolbar-color: #21332a;
+  --ion-tab-bar-background: #ffffff;
+  --ion-tab-bar-color: #6e7a72;
+  --ion-tab-bar-color-selected: #247a4b;
+  --ion-item-background: #ffffff;
+  --ion-card-background: #ffffff;
+  --ion-font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html,
+body,
+ion-app {
+  background: #fbfdf9;
+  color: #1b2f25;
+}
+
+ion-content {
+  --background: #fbfdf9;
+}
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #1b2f25;
+  --border-color: #e5eee7;
+}
+
+ion-tab-bar {
+  --background: #ffffff;
+  --border: 1px solid #e5eee7;
+}
+
+ion-searchbar {
+  --background: #ffffff;
+  --color: #1b2f25;
+  --placeholder-color: #607067;
+  --icon-color: #247a4b;
+  --box-shadow: 0 8px 22px rgba(36, 122, 75, 0.1);
+}
+
+ion-card {
+  --background: #ffffff;
+  color: #1b2f25;
+  border: 1px solid #e5eee7;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(36, 122, 75, 0.08);
+}
+
+ion-card-title {
+  color: #1b2f25;
+  font-weight: 800;
+}
+
+ion-card-subtitle {
+  color: #607067;
+  font-weight: 700;
+}
+
+ion-button {
+  font-weight: 800;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 18px 14px 32px;
+}
+
+.home-content {
+  --background: linear-gradient(160deg, #fffdf4 0%, #fbfdf9 46%, #edf7f0 100%);
+}
+
+.home-hero {
+  display: flex;
+  min-height: 78vh;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.home-hero h1,
+.summary-row h1,
+.details-header h1 {
+  margin: 0;
+  color: #18241d;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.description,
+.details-header p,
+ion-card-content p {
+  color: #3f5147;
+  line-height: 1.5;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #8a6a13;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.section-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-block h2 {
+  margin: 0;
+  color: #223128;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.section-block ion-list {
+  background: transparent;
+}
+
+.section-block ion-item {
+  --background: #ffffff;
+  --border-color: #e5eee7;
+  --color: #1f2a24;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip-grid ion-chip {
+  --background: #f7fbf8;
+  --color: #263a30;
+  border: 1.5px solid #d7e5dc;
+  color: #263a30 !important;
+  font-weight: 800;
+  margin: 0;
+  opacity: 1 !important;
+}
+
+.chip-grid ion-chip.chip-selected {
+  --background: #247a4b;
+  --color: #ffffff;
+  border-color: #247a4b;
+  color: #ffffff !important;
+}
+
+.chip-grid ion-chip[color="warning"] {
+  --background: #fff3c4;
+  --color: #4a3905;
+  border-color: #f3d875;
+}
+
+.form-actions {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.form-actions ion-button {
+  min-height: 52px;
+}
+
+.form-actions ion-button ion-badge {
+  margin-left: 8px;
+}
+
+.form-actions .clear-button {
+  --border-color: #b9ccc0;
+  --border-width: 2px;
+  --color: #1f4f36;
+  --background: #ffffff;
+  --background-hover: #eef7f1;
+  --background-activated: #e2f0e8;
+  color: #1f4f36;
+}
+
+.summary-row,
+.card-title-row,
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-title-row ion-card-title {
+  min-width: 0;
+  font-size: 1.1rem;
+}
+
+.result-count {
+  margin: -4px 2px 0;
+  color: #607067;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 2px;
+}
+
+.mini-group {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 8px;
+  margin-top: 10px;
+  color: #3f5147;
+  font-size: 0.92rem;
+}
+
+.mini-group strong {
+  color: #223128;
+}
+
+.source,
+.disclaimer {
+  margin-top: 12px;
+  color: #607067;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.load-more-button {
+  margin-top: 4px;
+  --border-color: #247a4b;
+  --color: #247a4b;
+}
+
+.details-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 700px) {
+  .home-hero {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}

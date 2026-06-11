@@ -1,0 +1,3087 @@
+[
+  {
+    "id": "chicken-adobo",
+    "name": "Chicken Adobo",
+    "slug": "chicken-adobo",
+    "description": "Tender chicken simmered in soy sauce, vinegar, garlic, and bay-style seasoning for a classic savory ulam.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "soy sauce",
+      "vinegar",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add chicken and lightly brown the pieces.",
+      "Pour in soy sauce, vinegar, and a little water.",
+      "Simmer until the chicken is cooked and the sauce reduces."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "pork-adobo",
+    "name": "Pork Adobo",
+    "slug": "pork-adobo",
+    "description": "Pork cubes slowly cooked in a tangy soy-vinegar sauce until rich and tender.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "soy sauce",
+      "vinegar",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic and onion.",
+      "Add pork and cook until the edges brown.",
+      "Add soy sauce, vinegar, and water.",
+      "Simmer until tender and reduce the sauce to taste."
+    ],
+    "cookingTimeMinutes": 60,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "sinigang-na-baboy",
+    "name": "Sinigang na Baboy",
+    "slug": "sinigang-na-baboy",
+    "description": "Comforting sour pork soup with vegetables, perfect with hot rice.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "tomato",
+      "onion",
+      "kangkong",
+      "sitaw",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "talong",
+      "pechay"
+    ],
+    "steps": [
+      "Boil pork with onion and tomato until tender.",
+      "Season the broth with a souring base and fish sauce.",
+      "Add firm vegetables first, then leafy greens.",
+      "Serve while hot with rice."
+    ],
+    "cookingTimeMinutes": 60,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "vegetable"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "sinigang-na-bangus",
+    "name": "Sinigang na Bangus",
+    "slug": "sinigang-na-bangus",
+    "description": "Bangus cooked in a bright sour broth with tomato and simple vegetables.",
+    "category": "fish",
+    "ingredients": [
+      "bangus",
+      "tomato",
+      "onion",
+      "kangkong",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "sitaw",
+      "talong",
+      "pechay"
+    ],
+    "steps": [
+      "Bring water, onion, and tomato to a simmer.",
+      "Add bangus and season the broth.",
+      "Add vegetables and cook briefly.",
+      "Adjust sourness and saltiness before serving."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "seafood"
+    ],
+    "mealType": "dinner",
+    "proteinType": "fish",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "tinolang-manok",
+    "name": "Tinolang Manok",
+    "slug": "tinolang-manok",
+    "description": "Chicken soup with sayote and leafy greens in a light ginger-style broth.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "sayote",
+      "pechay",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "kangkong"
+    ],
+    "steps": [
+      "Saute aromatics, then add chicken.",
+      "Season with fish sauce and add water.",
+      "Simmer until chicken is cooked.",
+      "Add sayote and greens near the end."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken",
+      "vegetable"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "ginataang-kalabasa-at-sitaw",
+    "name": "Ginataang Kalabasa at Sitaw",
+    "slug": "ginataang-kalabasa-at-sitaw",
+    "description": "Kalabasa and sitaw simmered in coconut milk for a creamy vegetable ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "kalabasa",
+      "sitaw",
+      "coconut milk",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "shrimp",
+      "pork"
+    ],
+    "steps": [
+      "Saute garlic and onion.",
+      "Add kalabasa, sitaw, and coconut milk.",
+      "Simmer until vegetables are tender.",
+      "Season and serve when the sauce thickens slightly."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "seafood"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "simmered",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tortang-talong",
+    "name": "Tortang Talong",
+    "slug": "tortang-talong",
+    "description": "Flattened roasted eggplant dipped in beaten egg and pan-fried until golden.",
+    "category": "egg",
+    "ingredients": [
+      "talong",
+      "egg",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Soften the eggplant, then peel and flatten it.",
+      "Beat eggs with simple seasoning.",
+      "Dip eggplant in egg mixture.",
+      "Pan-fry both sides until set and golden."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "egg",
+      "vegetable"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "egg",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginisang-ampalaya-with-egg",
+    "name": "Ginisang Ampalaya with Egg",
+    "slug": "ginisang-ampalaya-with-egg",
+    "description": "Ampalaya sauteed with tomato and egg for a quick, everyday vegetable dish.",
+    "category": "vegetable",
+    "ingredients": [
+      "ampalaya",
+      "egg",
+      "tomato",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato.",
+      "Add sliced ampalaya and cook until just tender.",
+      "Pour in beaten egg.",
+      "Stir gently and season to taste."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "vegetable",
+      "egg"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "pinakbet",
+    "name": "Pinakbet",
+    "slug": "pinakbet",
+    "description": "A mix of Filipino vegetables simmered with savory seasoning and optional pork or shrimp.",
+    "category": "vegetable",
+    "ingredients": [
+      "talong",
+      "sitaw",
+      "kalabasa",
+      "ampalaya",
+      "tomato",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute onion and tomato.",
+      "Add vegetables that need longer cooking first.",
+      "Season and simmer until almost tender.",
+      "Add delicate vegetables last to avoid overcooking."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "medium",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "pork",
+      "seafood"
+    ],
+    "mealType": "dinner",
+    "proteinType": "vegetable",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "bicol-express",
+    "name": "Bicol Express",
+    "slug": "bicol-express",
+    "description": "Pork cooked in coconut milk with bold, spicy, and savory flavors.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "coconut milk",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "shrimp"
+    ],
+    "steps": [
+      "Saute garlic and onion, then add pork.",
+      "Pour in coconut milk and simmer.",
+      "Season with fish sauce and chili if available.",
+      "Cook until pork is tender and sauce is creamy."
+    ],
+    "cookingTimeMinutes": 50,
+    "difficulty": "medium",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "pork-menudo",
+    "name": "Pork Menudo",
+    "slug": "pork-menudo",
+    "description": "Pork stew with tomato-based sauce and pantry-friendly vegetables.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "tomato",
+      "garlic",
+      "onion",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Marinate pork briefly with soy sauce if time allows.",
+      "Saute garlic, onion, and tomato.",
+      "Add pork and simmer with sauce.",
+      "Cook until pork is tender and flavors come together."
+    ],
+    "cookingTimeMinutes": 55,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "stew",
+    "isQuickMeal": false
+  },
+  {
+    "id": "chicken-afritada",
+    "name": "Chicken Afritada",
+    "slug": "chicken-afritada",
+    "description": "Chicken simmered in tomato sauce-style seasoning for a homey rice pairing.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "garlic",
+      "onion",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato.",
+      "Add chicken and cook until lightly browned.",
+      "Simmer with sauce and a little water.",
+      "Cook until chicken is tender and sauce is balanced."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "stew",
+    "isQuickMeal": false
+  },
+  {
+    "id": "paksiw-na-isda",
+    "name": "Paksiw na Isda",
+    "slug": "paksiw-na-isda",
+    "description": "Fish gently cooked in vinegar, garlic, and seasoning for a sharp, simple ulam.",
+    "category": "fish",
+    "ingredients": [
+      "fish",
+      "vinegar",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "ampalaya",
+      "talong"
+    ],
+    "steps": [
+      "Arrange fish with garlic and onion in a pan.",
+      "Add vinegar, water, and seasoning.",
+      "Simmer without stirring too much.",
+      "Add vegetables if using and cook until done."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "seafood"
+    ],
+    "mealType": "lunch",
+    "proteinType": "fish",
+    "cookingMethod": "simmered",
+    "isQuickMeal": true
+  },
+  {
+    "id": "bangus-sisig",
+    "name": "Bangus Sisig",
+    "slug": "bangus-sisig",
+    "description": "Flaked bangus sauteed with aromatics for a savory, sizzling-style dish.",
+    "category": "fish",
+    "ingredients": [
+      "bangus",
+      "garlic",
+      "onion",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "tomato"
+    ],
+    "steps": [
+      "Cook bangus, then flake the meat.",
+      "Saute garlic and onion.",
+      "Add bangus flakes and seasoning.",
+      "Finish with egg or tomato if available."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "medium",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "seafood",
+      "egg"
+    ],
+    "mealType": "dinner",
+    "proteinType": "fish",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "adobong-kangkong",
+    "name": "Adobong Kangkong",
+    "slug": "adobong-kangkong",
+    "description": "Kangkong cooked adobo-style with soy sauce, vinegar, and garlic.",
+    "category": "vegetable",
+    "ingredients": [
+      "kangkong",
+      "soy sauce",
+      "vinegar",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "tofu"
+    ],
+    "steps": [
+      "Saute garlic and onion.",
+      "Add kangkong stems first, then leaves.",
+      "Pour in soy sauce and vinegar.",
+      "Cook briefly so the greens stay bright."
+    ],
+    "cookingTimeMinutes": 15,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "tofu",
+      "pork"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginisang-pechay",
+    "name": "Ginisang Pechay",
+    "slug": "ginisang-pechay",
+    "description": "Pechay quickly sauteed with garlic, onion, and tomato for a light vegetable ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "pechay",
+      "garlic",
+      "onion",
+      "tomato",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "tofu",
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato.",
+      "Add pechay stems, then leaves.",
+      "Season lightly.",
+      "Cook just until tender."
+    ],
+    "cookingTimeMinutes": 15,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "tofu",
+      "seafood"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "sardines-with-misua",
+    "name": "Sardines with Misua",
+    "slug": "sardines-with-misua",
+    "description": "Canned sardines stretched into a warm noodle soup for a quick simple meal.",
+    "category": "canned goods",
+    "ingredients": [
+      "sardines",
+      "garlic",
+      "onion",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "pechay"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato.",
+      "Add sardines and water.",
+      "Add misua noodles if available.",
+      "Simmer briefly and adjust seasoning."
+    ],
+    "cookingTimeMinutes": 15,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "canned goods",
+      "fish"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "canned",
+    "cookingMethod": "soup",
+    "isQuickMeal": true
+  },
+  {
+    "id": "corned-beef-guisado",
+    "name": "Corned Beef Guisado",
+    "slug": "corned-beef-guisado",
+    "description": "Corned beef sauteed with garlic, onion, and tomato for a fast breakfast or lunch ulam.",
+    "category": "canned goods",
+    "ingredients": [
+      "corned beef",
+      "garlic",
+      "onion",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato.",
+      "Add corned beef and break it up.",
+      "Cook until heated through and lightly toasted.",
+      "Serve with rice or egg if available."
+    ],
+    "cookingTimeMinutes": 15,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "canned goods",
+      "egg"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "canned",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tokwat-baboy",
+    "name": "Tokwa't Baboy",
+    "slug": "tokwat-baboy",
+    "description": "Fried tofu and pork tossed with a tangy soy-vinegar onion sauce.",
+    "category": "tofu",
+    "ingredients": [
+      "tofu",
+      "pork",
+      "soy sauce",
+      "vinegar",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "garlic"
+    ],
+    "steps": [
+      "Fry tofu until crisp, then cut into pieces.",
+      "Cook pork until tender, then slice.",
+      "Mix soy sauce, vinegar, onion, and seasoning.",
+      "Toss tofu and pork with the sauce before serving."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "tofu",
+      "pork"
+    ],
+    "mealType": "dinner",
+    "proteinType": "tofu",
+    "cookingMethod": "fried",
+    "isQuickMeal": false
+  },
+  {
+    "id": "shrimp-ginataan",
+    "name": "Shrimp Ginataan",
+    "slug": "shrimp-ginataan",
+    "description": "Shrimp simmered in coconut milk with aromatics for a creamy seafood dish.",
+    "category": "seafood",
+    "ingredients": [
+      "shrimp",
+      "coconut milk",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "kalabasa",
+      "sitaw"
+    ],
+    "steps": [
+      "Saute garlic and onion.",
+      "Add coconut milk and simmer gently.",
+      "Add shrimp and cook until just done.",
+      "Season and add vegetables if available."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "seafood",
+      "vegetable"
+    ],
+    "mealType": "dinner",
+    "proteinType": "seafood",
+    "cookingMethod": "simmered",
+    "isQuickMeal": true
+  },
+  {
+    "id": "adobong-sitaw",
+    "name": "Adobong Sitaw",
+    "slug": "adobong-sitaw",
+    "description": "Adobong Sitaw quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "sitaw",
+      "soy sauce",
+      "vinegar",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "tofu"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "adobong-pusit",
+    "name": "Adobong Pusit",
+    "slug": "adobong-pusit",
+    "description": "Adobong Pusit gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "seafood",
+    "ingredients": [
+      "squid",
+      "soy sauce",
+      "vinegar",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "seafood",
+      "quick meal",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "seafood",
+    "cookingMethod": "simmered",
+    "isQuickMeal": true
+  },
+  {
+    "id": "adobong-manok-sa-gata",
+    "name": "Adobong Manok sa Gata",
+    "slug": "adobong-manok-sa-gata",
+    "description": "Adobong Manok sa Gata gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "coconut milk",
+      "soy sauce",
+      "vinegar",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 50,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "nilagang-baka",
+    "name": "Nilagang Baka",
+    "slug": "nilagang-baka",
+    "description": "Nilagang Baka served warm with a light, savory broth for a comforting rice meal.",
+    "category": "beef",
+    "ingredients": [
+      "beef",
+      "onion",
+      "pechay",
+      "sayote",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "sitaw"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 90,
+    "difficulty": "medium",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "beef",
+      "soup"
+    ],
+    "mealType": "dinner",
+    "proteinType": "beef",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "nilagang-baboy",
+    "name": "Nilagang Baboy",
+    "slug": "nilagang-baboy",
+    "description": "Nilagang Baboy served warm with a light, savory broth for a comforting rice meal.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "onion",
+      "pechay",
+      "sayote",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "sitaw"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 70,
+    "difficulty": "medium",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "soup"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "sinigang-na-hipon",
+    "name": "Sinigang na Hipon",
+    "slug": "sinigang-na-hipon",
+    "description": "Sinigang na Hipon served warm with a light, savory broth for a comforting rice meal.",
+    "category": "seafood",
+    "ingredients": [
+      "shrimp",
+      "tomato",
+      "onion",
+      "kangkong",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "sitaw",
+      "talong"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "seafood",
+      "soup",
+      "quick meal"
+    ],
+    "mealType": "dinner",
+    "proteinType": "seafood",
+    "cookingMethod": "soup",
+    "isQuickMeal": true
+  },
+  {
+    "id": "sinigang-na-salmon-belly",
+    "name": "Sinigang na Salmon Belly",
+    "slug": "sinigang-na-salmon-belly",
+    "description": "Sinigang na Salmon Belly served warm with a light, savory broth for a comforting rice meal.",
+    "category": "fish",
+    "ingredients": [
+      "fish",
+      "tomato",
+      "onion",
+      "kangkong",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pechay",
+      "sitaw"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 40,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "soup"
+    ],
+    "mealType": "dinner",
+    "proteinType": "fish",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "pesang-isda",
+    "name": "Pesang Isda",
+    "slug": "pesang-isda",
+    "description": "Pesang Isda served warm with a light, savory broth for a comforting rice meal.",
+    "category": "fish",
+    "ingredients": [
+      "fish",
+      "pechay",
+      "sayote",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "healthy/simple meal",
+      "soup"
+    ],
+    "mealType": "dinner",
+    "proteinType": "fish",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "escabeche",
+    "name": "Escabeche",
+    "slug": "escabeche",
+    "description": "Escabeche cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "fish",
+    "ingredients": [
+      "fish",
+      "vinegar",
+      "garlic",
+      "onion",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "soy sauce"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 40,
+    "difficulty": "medium",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "fried"
+    ],
+    "mealType": "dinner",
+    "proteinType": "fish",
+    "cookingMethod": "fried",
+    "isQuickMeal": false
+  },
+  {
+    "id": "daing-na-bangus",
+    "name": "Daing na Bangus",
+    "slug": "daing-na-bangus",
+    "description": "Daing na Bangus cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "fish",
+    "ingredients": [
+      "bangus",
+      "vinegar",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "fish",
+      "fried",
+      "quick meal"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "fish",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "fried-tilapia",
+    "name": "Fried Tilapia",
+    "slug": "fried-tilapia",
+    "description": "Fried Tilapia cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "fish",
+    "ingredients": [
+      "tilapia",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "tomato",
+      "onion"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "fried",
+      "quick meal"
+    ],
+    "mealType": "any",
+    "proteinType": "fish",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginataang-tilapia",
+    "name": "Ginataang Tilapia",
+    "slug": "ginataang-tilapia",
+    "description": "Ginataang Tilapia gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "fish",
+    "ingredients": [
+      "tilapia",
+      "coconut milk",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pechay"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "fish",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "ginataang-gulay",
+    "name": "Ginataang Gulay",
+    "slug": "ginataang-gulay",
+    "description": "Ginataang Gulay gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "vegetable",
+    "ingredients": [
+      "kalabasa",
+      "sitaw",
+      "pechay",
+      "coconut milk",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "shrimp"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "healthy/simple meal",
+      "simmered"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "simmered",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginataang-langka",
+    "name": "Ginataang Langka",
+    "slug": "ginataang-langka",
+    "description": "Ginataang Langka gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "vegetable",
+    "ingredients": [
+      "coconut milk",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "medium",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "vegetable",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "laing",
+    "name": "Laing",
+    "slug": "laing",
+    "description": "Laing gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "vegetable",
+    "ingredients": [
+      "coconut milk",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 55,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "vegetable",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "ginisang-munggo",
+    "name": "Ginisang Munggo",
+    "slug": "ginisang-munggo",
+    "description": "Ginisang Munggo gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "vegetable",
+    "ingredients": [
+      "garlic",
+      "onion",
+      "tomato",
+      "fish sauce",
+      "pechay"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 50,
+    "difficulty": "medium",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "healthy/simple meal",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "vegetable",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "ginisang-repolyo",
+    "name": "Ginisang Repolyo",
+    "slug": "ginisang-repolyo",
+    "description": "Ginisang Repolyo quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "garlic",
+      "onion",
+      "tomato",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp",
+      "tofu"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginisang-sayote",
+    "name": "Ginisang Sayote",
+    "slug": "ginisang-sayote",
+    "description": "Ginisang Sayote quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "sayote",
+      "garlic",
+      "onion",
+      "tomato",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginisang-upo",
+    "name": "Ginisang Upo",
+    "slug": "ginisang-upo",
+    "description": "Ginisang Upo quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "garlic",
+      "onion",
+      "tomato",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginisang-togue",
+    "name": "Ginisang Togue",
+    "slug": "ginisang-togue",
+    "description": "Ginisang Togue quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "tofu",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "shrimp"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "tofu",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "tofu",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "ginisang-sardinas",
+    "name": "Ginisang Sardinas",
+    "slug": "ginisang-sardinas",
+    "description": "Ginisang Sardinas quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "canned goods",
+    "ingredients": [
+      "sardines",
+      "garlic",
+      "onion",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 15,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "canned goods",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "canned",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "sardines-with-egg",
+    "name": "Sardines with Egg",
+    "slug": "sardines-with-egg",
+    "description": "Sardines with Egg quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "canned goods",
+    "ingredients": [
+      "sardines",
+      "egg",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 15,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "canned goods",
+      "egg",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "canned",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tuna-sisig",
+    "name": "Tuna Sisig",
+    "slug": "tuna-sisig",
+    "description": "Tuna Sisig quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "canned goods",
+    "ingredients": [
+      "garlic",
+      "onion",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "tomato"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "canned goods",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "canned",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tuna-omelette",
+    "name": "Tuna Omelette",
+    "slug": "tuna-omelette",
+    "description": "Tuna Omelette cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "egg",
+    "ingredients": [
+      "egg",
+      "onion",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "garlic"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 15,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "egg",
+      "canned goods",
+      "quick meal",
+      "fried"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "egg",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tortang-giniling",
+    "name": "Tortang Giniling",
+    "slug": "tortang-giniling",
+    "description": "Tortang Giniling cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "egg",
+    "ingredients": [
+      "egg",
+      "pork",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "egg",
+      "pork",
+      "quick meal",
+      "fried"
+    ],
+    "mealType": "any",
+    "proteinType": "egg",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tortang-dulong",
+    "name": "Tortang Dulong",
+    "slug": "tortang-dulong",
+    "description": "Tortang Dulong cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "egg",
+    "ingredients": [
+      "egg",
+      "fish",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "egg",
+      "fish",
+      "quick meal",
+      "fried"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "egg",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "egg-sarciado",
+    "name": "Egg Sarciado",
+    "slug": "egg-sarciado",
+    "description": "Egg Sarciado quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "egg",
+    "ingredients": [
+      "egg",
+      "tomato",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pechay"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "egg",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "egg",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "sarciadong-isda",
+    "name": "Sarciadong Isda",
+    "slug": "sarciadong-isda",
+    "description": "Sarciadong Isda quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "fish",
+    "ingredients": [
+      "fish",
+      "egg",
+      "tomato",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "egg",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "fish",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tokwa-guisado",
+    "name": "Tokwa Guisado",
+    "slug": "tokwa-guisado",
+    "description": "Tokwa Guisado quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "tofu",
+    "ingredients": [
+      "tofu",
+      "garlic",
+      "onion",
+      "tomato",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pechay"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "tofu",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "any",
+    "proteinType": "tofu",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "tokwa-sisig",
+    "name": "Tokwa Sisig",
+    "slug": "tokwa-sisig",
+    "description": "Tokwa Sisig cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "tofu",
+    "ingredients": [
+      "tofu",
+      "garlic",
+      "onion",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "tofu",
+      "quick meal",
+      "fried"
+    ],
+    "mealType": "dinner",
+    "proteinType": "tofu",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "pork-giniling",
+    "name": "Pork Giniling",
+    "slug": "pork-giniling",
+    "description": "Pork Giniling quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "garlic",
+      "onion",
+      "tomato",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "sauteed"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": false
+  },
+  {
+    "id": "picadillo",
+    "name": "Picadillo",
+    "slug": "picadillo",
+    "description": "Picadillo quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "beef",
+    "ingredients": [
+      "beef",
+      "garlic",
+      "onion",
+      "tomato",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "beef",
+      "sauteed"
+    ],
+    "mealType": "dinner",
+    "proteinType": "beef",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": false
+  },
+  {
+    "id": "mechado",
+    "name": "Mechado",
+    "slug": "mechado",
+    "description": "Mechado cooked as a hearty Filipino-style stew with a rich, homey sauce.",
+    "category": "beef",
+    "ingredients": [
+      "beef",
+      "tomato",
+      "garlic",
+      "onion",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato if using.",
+      "Add the main ingredient and cook briefly.",
+      "Simmer with sauce until tender.",
+      "Adjust seasoning before serving."
+    ],
+    "cookingTimeMinutes": 90,
+    "difficulty": "medium",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "beef",
+      "stew"
+    ],
+    "mealType": "dinner",
+    "proteinType": "beef",
+    "cookingMethod": "stew",
+    "isQuickMeal": false
+  },
+  {
+    "id": "caldereta",
+    "name": "Caldereta",
+    "slug": "caldereta",
+    "description": "Caldereta cooked as a hearty Filipino-style stew with a rich, homey sauce.",
+    "category": "beef",
+    "ingredients": [
+      "beef",
+      "tomato",
+      "garlic",
+      "onion",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "coconut milk"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato if using.",
+      "Add the main ingredient and cook briefly.",
+      "Simmer with sauce until tender.",
+      "Adjust seasoning before serving."
+    ],
+    "cookingTimeMinutes": 90,
+    "difficulty": "medium",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "beef",
+      "stew"
+    ],
+    "mealType": "dinner",
+    "proteinType": "beef",
+    "cookingMethod": "stew",
+    "isQuickMeal": false
+  },
+  {
+    "id": "bistek-tagalog",
+    "name": "Beef Steak / Bistek Tagalog",
+    "slug": "bistek-tagalog",
+    "description": "Beef Steak / Bistek Tagalog gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "beef",
+    "ingredients": [
+      "beef",
+      "soy sauce",
+      "onion",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "beef",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "beef",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "chicken-curry",
+    "name": "Chicken Curry",
+    "slug": "chicken-curry",
+    "description": "Chicken Curry cooked as a hearty Filipino-style stew with a rich, homey sauce.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "coconut milk",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato if using.",
+      "Add the main ingredient and cook briefly.",
+      "Simmer with sauce until tender.",
+      "Adjust seasoning before serving."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "medium",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken",
+      "stew"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "stew",
+    "isQuickMeal": false
+  },
+  {
+    "id": "chicken-pastel",
+    "name": "Chicken Pastel",
+    "slug": "chicken-pastel",
+    "description": "Chicken Pastel cooked as a hearty Filipino-style stew with a rich, homey sauce.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato if using.",
+      "Add the main ingredient and cook briefly.",
+      "Simmer with sauce until tender.",
+      "Adjust seasoning before serving."
+    ],
+    "cookingTimeMinutes": 60,
+    "difficulty": "hard",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken",
+      "stew"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "stew",
+    "isQuickMeal": false
+  },
+  {
+    "id": "chicken-asado",
+    "name": "Chicken Asado",
+    "slug": "chicken-asado",
+    "description": "Chicken Asado gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "soy sauce",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "lechon-kawali",
+    "name": "Lechon Kawali",
+    "slug": "lechon-kawali",
+    "description": "Lechon Kawali cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "fish sauce",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "vinegar"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 75,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "fried"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "fried",
+    "isQuickMeal": false
+  },
+  {
+    "id": "dinakdakan",
+    "name": "Dinakdakan",
+    "slug": "dinakdakan",
+    "description": "Dinakdakan made as a simple Filipino ulam with familiar pantry flavors and short home-cooking steps.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "onion",
+      "vinegar",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Season the main ingredient.",
+      "Grill or sear until cooked.",
+      "Slice or toss with aromatics if needed.",
+      "Serve with rice and sauce."
+    ],
+    "cookingTimeMinutes": 75,
+    "difficulty": "hard",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "grilled"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "grilled",
+    "isQuickMeal": false
+  },
+  {
+    "id": "sisig",
+    "name": "Sisig",
+    "slug": "sisig",
+    "description": "Sisig quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "onion",
+      "soy sauce",
+      "vinegar"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 60,
+    "difficulty": "medium",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "sauteed"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": false
+  },
+  {
+    "id": "igado",
+    "name": "Igado",
+    "slug": "igado",
+    "description": "Igado cooked as a hearty Filipino-style stew with a rich, homey sauce.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "soy sauce",
+      "vinegar",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "fish sauce"
+    ],
+    "steps": [
+      "Saute garlic, onion, and tomato if using.",
+      "Add the main ingredient and cook briefly.",
+      "Simmer with sauce until tender.",
+      "Adjust seasoning before serving."
+    ],
+    "cookingTimeMinutes": 55,
+    "difficulty": "medium",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "stew"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "stew",
+    "isQuickMeal": false
+  },
+  {
+    "id": "dinengdeng",
+    "name": "Dinengdeng",
+    "slug": "dinengdeng",
+    "description": "Dinengdeng served warm with a light, savory broth for a comforting rice meal.",
+    "category": "vegetable",
+    "ingredients": [
+      "sitaw",
+      "kalabasa",
+      "talong",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "fish"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "healthy/simple meal",
+      "soup"
+    ],
+    "mealType": "dinner",
+    "proteinType": "vegetable",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "inabraw",
+    "name": "Inabraw",
+    "slug": "inabraw",
+    "description": "Inabraw served warm with a light, savory broth for a comforting rice meal.",
+    "category": "vegetable",
+    "ingredients": [
+      "kangkong",
+      "sitaw",
+      "talong",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "fish"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "healthy/simple meal",
+      "soup"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "soup",
+    "isQuickMeal": true
+  },
+  {
+    "id": "pakbet-ilocano",
+    "name": "Pakbet Ilocano",
+    "slug": "pakbet-ilocano",
+    "description": "Pakbet Ilocano gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "vegetable",
+    "ingredients": [
+      "ampalaya",
+      "talong",
+      "sitaw",
+      "kalabasa",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "pork",
+      "fish"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 40,
+    "difficulty": "medium",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "vegetable",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "chopsuey",
+    "name": "Chopsuey",
+    "slug": "chopsuey",
+    "description": "Chopsuey quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "vegetable",
+    "ingredients": [
+      "pechay",
+      "sayote",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "shrimp",
+      "pork"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "sauteed"
+    ],
+    "mealType": "dinner",
+    "proteinType": "vegetable",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": false
+  },
+  {
+    "id": "lumpiang-gulay",
+    "name": "Lumpiang Gulay",
+    "slug": "lumpiang-gulay",
+    "description": "Lumpiang Gulay cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "vegetable",
+    "ingredients": [
+      "tofu",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pork"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "vegetable",
+      "fried"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "fried",
+    "isQuickMeal": false
+  },
+  {
+    "id": "lumpiang-shanghai",
+    "name": "Lumpiang Shanghai",
+    "slug": "lumpiang-shanghai",
+    "description": "Lumpiang Shanghai cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "egg",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "soy sauce"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 50,
+    "difficulty": "medium",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "fried"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "fried",
+    "isQuickMeal": false
+  },
+  {
+    "id": "relyenong-talong",
+    "name": "Relyenong Talong",
+    "slug": "relyenong-talong",
+    "description": "Relyenong Talong cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "egg",
+    "ingredients": [
+      "talong",
+      "egg",
+      "pork",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "medium",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "egg",
+      "vegetable",
+      "fried"
+    ],
+    "mealType": "any",
+    "proteinType": "egg",
+    "cookingMethod": "fried",
+    "isQuickMeal": false
+  },
+  {
+    "id": "kinamatisang-baboy",
+    "name": "Kinamatisang Baboy",
+    "slug": "kinamatisang-baboy",
+    "description": "Kinamatisang Baboy gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "tomato",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pechay"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  },
+  {
+    "id": "kinamatisang-isda",
+    "name": "Kinamatisang Isda",
+    "slug": "kinamatisang-isda",
+    "description": "Kinamatisang Isda gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "fish",
+    "ingredients": [
+      "fish",
+      "tomato",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "pechay"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "fish",
+      "quick meal",
+      "simmered"
+    ],
+    "mealType": "any",
+    "proteinType": "fish",
+    "cookingMethod": "simmered",
+    "isQuickMeal": true
+  },
+  {
+    "id": "giniling-with-patatas",
+    "name": "Giniling with Patatas",
+    "slug": "giniling-with-patatas",
+    "description": "Giniling with Patatas quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "pork",
+    "ingredients": [
+      "pork",
+      "garlic",
+      "onion",
+      "tomato",
+      "soy sauce"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 35,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "pork",
+      "sauteed"
+    ],
+    "mealType": "dinner",
+    "proteinType": "pork",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": false
+  },
+  {
+    "id": "corned-beef-with-potato",
+    "name": "Corned Beef with Potato",
+    "slug": "corned-beef-with-potato",
+    "description": "Corned Beef with Potato quickly sauteed with aromatics for an everyday Filipino ulam.",
+    "category": "canned goods",
+    "ingredients": [
+      "corned beef",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "tomato"
+    ],
+    "steps": [
+      "Saute garlic and onion until fragrant.",
+      "Add the main ingredient and stir-fry.",
+      "Season with pantry condiments.",
+      "Cook just until tender and serve."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "canned goods",
+      "quick meal",
+      "sauteed"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "canned",
+    "cookingMethod": "sauteed",
+    "isQuickMeal": true
+  },
+  {
+    "id": "misua-with-patola",
+    "name": "Misua with Patola",
+    "slug": "misua-with-patola",
+    "description": "Misua with Patola served warm with a light, savory broth for a comforting rice meal.",
+    "category": "soup",
+    "ingredients": [
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "egg",
+      "sardines"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "soup",
+      "quick meal"
+    ],
+    "mealType": "any",
+    "proteinType": "vegetable",
+    "cookingMethod": "soup",
+    "isQuickMeal": true
+  },
+  {
+    "id": "misua-with-sardines",
+    "name": "Misua with Sardines",
+    "slug": "misua-with-sardines",
+    "description": "Misua with Sardines served warm with a light, savory broth for a comforting rice meal.",
+    "category": "canned goods",
+    "ingredients": [
+      "sardines",
+      "garlic",
+      "onion",
+      "tomato"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "canned goods",
+      "soup",
+      "quick meal"
+    ],
+    "mealType": "any",
+    "proteinType": "canned",
+    "cookingMethod": "soup",
+    "isQuickMeal": true
+  },
+  {
+    "id": "chicken-sopas",
+    "name": "Chicken Sopas",
+    "slug": "chicken-sopas",
+    "description": "Chicken Sopas served warm with a light, savory broth for a comforting rice meal.",
+    "category": "soup",
+    "ingredients": [
+      "chicken",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "dinner",
+      "chicken",
+      "soup"
+    ],
+    "mealType": "any",
+    "proteinType": "chicken",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "arroz-caldo",
+    "name": "Arroz Caldo",
+    "slug": "arroz-caldo",
+    "description": "Arroz Caldo served warm with a light, savory broth for a comforting rice meal.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "breakfast",
+      "lunch",
+      "chicken",
+      "soup"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "chicken",
+    "cookingMethod": "soup",
+    "isQuickMeal": false
+  },
+  {
+    "id": "champorado",
+    "name": "Champorado",
+    "slug": "champorado",
+    "description": "Champorado gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "breakfast",
+    "ingredients": [
+      "egg"
+    ],
+    "optionalIngredients": [],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "breakfast",
+      "quick meal",
+      "simmered"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "egg",
+    "cookingMethod": "simmered",
+    "isQuickMeal": true
+  },
+  {
+    "id": "lugaw-with-egg",
+    "name": "Lugaw with Egg",
+    "slug": "lugaw-with-egg",
+    "description": "Lugaw with Egg served warm with a light, savory broth for a comforting rice meal.",
+    "category": "egg",
+    "ingredients": [
+      "egg",
+      "garlic",
+      "onion",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "chicken"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and water or broth.",
+      "Simmer until cooked and season to taste.",
+      "Add greens or delicate ingredients near the end."
+    ],
+    "cookingTimeMinutes": 30,
+    "difficulty": "easy",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "breakfast",
+      "egg",
+      "soup",
+      "quick meal"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "egg",
+    "cookingMethod": "soup",
+    "isQuickMeal": true
+  },
+  {
+    "id": "beef-tapa",
+    "name": "Beef Tapa",
+    "slug": "beef-tapa",
+    "description": "Beef Tapa cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "beef",
+    "ingredients": [
+      "beef",
+      "soy sauce",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "egg"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 25,
+    "difficulty": "easy",
+    "sourceName": "Pepper.ph",
+    "sourceUrl": "https://pepper.ph/",
+    "tags": [
+      "breakfast",
+      "beef",
+      "fried",
+      "quick meal"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "beef",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "longganisa-with-egg",
+    "name": "Longganisa with Egg",
+    "slug": "longganisa-with-egg",
+    "description": "Longganisa with Egg cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "egg",
+    "ingredients": [
+      "egg",
+      "garlic"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 20,
+    "difficulty": "easy",
+    "sourceName": "Panlasang Pinoy",
+    "sourceUrl": "https://panlasangpinoy.com/",
+    "tags": [
+      "breakfast",
+      "egg",
+      "fried",
+      "quick meal"
+    ],
+    "mealType": "breakfast",
+    "proteinType": "egg",
+    "cookingMethod": "fried",
+    "isQuickMeal": true
+  },
+  {
+    "id": "fried-chicken-filipino-style",
+    "name": "Fried Chicken Filipino Style",
+    "slug": "fried-chicken-filipino-style",
+    "description": "Fried Chicken Filipino Style cooked until crisp or lightly browned, then served with rice and a simple dipping sauce.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "garlic",
+      "fish sauce"
+    ],
+    "optionalIngredients": [
+      "soy sauce"
+    ],
+    "steps": [
+      "Season the main ingredient lightly.",
+      "Fry until cooked through and lightly browned.",
+      "Drain excess oil if needed.",
+      "Serve warm with rice."
+    ],
+    "cookingTimeMinutes": 45,
+    "difficulty": "easy",
+    "sourceName": "Kawaling Pinoy",
+    "sourceUrl": "https://www.kawalingpinoy.com/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken",
+      "fried"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "fried",
+    "isQuickMeal": false
+  },
+  {
+    "id": "chicken-hamonado",
+    "name": "Chicken Hamonado",
+    "slug": "chicken-hamonado",
+    "description": "Chicken Hamonado gently simmered until the main ingredients absorb the savory sauce.",
+    "category": "chicken",
+    "ingredients": [
+      "chicken",
+      "soy sauce",
+      "garlic",
+      "onion"
+    ],
+    "optionalIngredients": [
+      "tomato"
+    ],
+    "steps": [
+      "Saute aromatics until fragrant.",
+      "Add the main ingredient and sauce.",
+      "Simmer until cooked and flavors blend.",
+      "Reduce the sauce to your preferred consistency."
+    ],
+    "cookingTimeMinutes": 50,
+    "difficulty": "medium",
+    "sourceName": "Yummy.ph",
+    "sourceUrl": "https://www.yummy.ph/",
+    "tags": [
+      "lunch",
+      "dinner",
+      "chicken",
+      "simmered"
+    ],
+    "mealType": "dinner",
+    "proteinType": "chicken",
+    "cookingMethod": "simmered",
+    "isQuickMeal": false
+  }
+]
