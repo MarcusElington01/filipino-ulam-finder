@@ -16,8 +16,11 @@
           </div>
           <h1>{{ recipe.name }}</h1>
           <p>{{ recipe.description }}</p>
-          <ion-button expand="block" @click="store.toggleFavorite(recipe.id)">
+          <ion-button expand="block" @click="toggleFavorite(recipe.id)">
             {{ store.isFavorite(recipe.id) ? 'Remove from Favorites' : 'Save to Favorites' }}
+          </ion-button>
+          <ion-button expand="block" fill="outline" class="clear-button" @click="markCooked(recipe, store.mealType)">
+            I cooked this
           </ion-button>
         </div>
 
@@ -53,18 +56,6 @@
         </section>
 
         <section class="section-block">
-          <h2>Missing Ingredients</h2>
-          <div class="chip-grid" v-if="missingIngredients.length">
-            <ion-chip v-for="ingredient in missingIngredients" :key="ingredient" color="warning">
-              {{ titleCase(ingredient) }}
-            </ion-chip>
-          </div>
-          <ion-card v-else>
-            <ion-card-content>You have the required ingredients selected for this recipe.</ion-card-content>
-          </ion-card>
-        </section>
-
-        <section class="section-block">
           <h2>Steps</h2>
           <ion-list inset>
             <ion-item v-for="(step, index) in recipe.steps" :key="step">
@@ -78,7 +69,7 @@
           <ion-card-content>
             <p><strong>Source attribution:</strong> {{ recipe.sourceName }}</p>
             <a :href="recipe.sourceUrl" target="_blank" rel="noreferrer">{{ recipe.sourceUrl }}</a>
-            <p class="disclaimer">Recipe details are summarized for app demo purposes. Please visit the source link for the full original recipe.</p>
+            <p class="disclaimer">Recipe details are simplified for quick meal planning. Please visit the source link for the full original recipe.</p>
           </ion-card-content>
         </ion-card>
       </div>
@@ -112,19 +103,21 @@ import {
   IonToolbar
 } from '@ionic/vue';
 import { useRecipeStore } from '@/stores/recipeStore';
+import { useCookedMeal } from '@/composables/useCookedMeal';
+import { showToast } from '@/utils/toast';
 
 const route = useRoute();
 const store = useRecipeStore();
+const { markCooked } = useCookedMeal();
 const recipe = computed(() => store.getRecipeBySlug(String(route.params.slug)));
-const missingIngredients = computed(() => {
-  if (!recipe.value) return [];
-  const match = store.suggestions.find((suggestion) => suggestion.recipe.id === recipe.value?.id);
-  if (match) return match.missingIngredients;
-
-  return recipe.value.ingredients.filter((ingredient) => !store.selectedIngredients.includes(ingredient));
-});
 
 function titleCase(value: string) {
   return value.replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+async function toggleFavorite(recipeId: string) {
+  const wasFavorite = store.isFavorite(recipeId);
+  store.toggleFavorite(recipeId);
+  await showToast(wasFavorite ? 'Removed from favorites.' : 'Added to favorites.', wasFavorite ? 'medium' : 'success');
 }
 </script>

@@ -1,64 +1,51 @@
 import { computed, ref } from 'vue';
 import { defineStore } from 'pinia';
 import recipesData from '@/data/recipes.json';
-import type { ProteinType, Recipe, RecipeMatch } from '@/types/recipe';
+import { useMealHistoryStore } from '@/stores/mealHistoryStore';
+import type { DishType, ProteinType, Recipe, RecipeMatch } from '@/types/recipe';
 
 const FAVORITES_KEY = 'anong-ulam:favorites';
 
-export const ingredientCategories = [
-  { name: 'Meat', ingredients: ['pork', 'chicken', 'beef'] },
-  { name: 'Seafood', ingredients: ['fish', 'tilapia', 'bangus', 'shrimp', 'squid'] },
-  { name: 'Vegetables', ingredients: ['kangkong', 'ampalaya', 'talong', 'sitaw', 'kalabasa', 'sayote', 'pechay'] },
-  {
-    name: 'Pantry',
-    ingredients: [
-      'egg',
-      'tofu',
-      'sardines',
-      'corned beef',
-      'garlic',
-      'onion',
-      'tomato',
-      'soy sauce',
-      'vinegar',
-      'fish sauce',
-      'coconut milk'
-    ]
-  }
+export const cookingTimeOptions = [
+  { label: 'Any duration', value: null },
+  { label: 'Quick under 30 minutes', value: 30 }
+];
+export const mealTypeOptions = ['any', 'breakfast', 'lunch', 'dinner'];
+export const categoryOptions = ['chicken', 'pork', 'beef', 'fish', 'seafood', 'vegetable', 'egg', 'tofu', 'canned goods'];
+export const dishTypeOptions: DishType[] = ['ulam', 'sabaw', 'fried', 'ginisa', 'gata', 'adobo', 'grilled', 'rice meal'];
+export const avoidRepeatOptions = [
+  { label: 'Allow repeats', value: '' },
+  { label: 'No repeat from yesterday', value: 'yesterday' },
+  { label: 'No repeat within 2 days', value: '2days' },
+  { label: 'No repeat this week', value: 'week' }
 ];
 
-export const cookingTimeOptions = [
-  { label: 'Under 15 minutes', value: 15 },
-  { label: 'Under 30 minutes', value: 30 },
-  { label: 'Under 1 hour', value: 60 }
-];
-export const mealTypeOptions = ['breakfast', 'lunch', 'dinner'];
-export const categoryOptions = [
-  'pork',
-  'chicken',
-  'beef',
-  'fish',
-  'vegetable',
-  'seafood',
-  'canned goods',
-  'egg',
-  'tofu',
-  'soup',
-  'fried'
-];
+type MealTypeFilter = '' | 'any' | 'breakfast' | 'lunch' | 'dinner';
+type AvoidRepeatFilter = '' | 'yesterday' | '2days' | 'week';
+
+interface RankOptions {
+  mealType?: MealTypeFilter;
+  category?: string;
+  dishType?: DishType | '';
+  quickOnly?: boolean;
+  noPork?: boolean;
+  noSeafood?: boolean;
+  avoidRepeat?: AvoidRepeatFilter;
+  excludedCategories?: string[];
+  limit?: number;
+}
 
 export const useRecipeStore = defineStore('recipe', () => {
+  const mealHistoryStore = useMealHistoryStore();
   const recipes = ref<Recipe[]>(recipesData as Recipe[]);
-  const selectedIngredients = ref<string[]>([]);
   const cookingTime = ref<number | null>(null);
-  const mealType = ref('');
+  const mealType = ref<MealTypeFilter>('any');
   const category = ref('');
+  const dishType = ref<DishType | ''>('');
   const quickMealsOnly = ref(false);
   const noPork = ref(false);
   const noSeafood = ref(false);
-  const vegetableOnly = ref(false);
-  const cannedGoodsOnly = ref(false);
-  const eggMealsOnly = ref(false);
+  const avoidRepeat = ref<AvoidRepeatFilter>('');
   const favoriteIds = ref<string[]>(loadFavoriteIds());
 
   const favoriteRecipes = computed(() =>
@@ -67,125 +54,77 @@ export const useRecipeStore = defineStore('recipe', () => {
       .filter((recipe): recipe is Recipe => Boolean(recipe))
   );
 
-  function calculateMatchScore(
-    recipe: Recipe,
-    requiredMatches: number,
-    optionalMatches: number,
-    missingRequired: number
-  ) {
-    let points = 0;
-    let maxPoints = 0;
+  const suggestions = computed<RecipeMatch[]>(() =>
+    rankRecipes({
+      mealType: mealType.value,
+      category: category.value,
+      dishType: dishType.value,
+      quickOnly: quickMealsOnly.value || cookingTime.value === 30,
+      noPork: noPork.value,
+      noSeafood: noSeafood.value,
+      avoidRepeat: avoidRepeat.value
+    })
+  );
 
-    const selectedIngredientCount = requiredMatches + missingRequired;
-    if (selectedIngredientCount > 0) {
-      points += requiredMatches * 12;
-      maxPoints += selectedIngredientCount * 12;
-      points += optionalMatches * 4;
-      maxPoints += Math.max(recipe.optionalIngredients.length, optionalMatches) * 4;
-      points -= missingRequired * 4;
-    }
-
-    if (cookingTime.value) {
-      maxPoints += 10;
-      if (recipe.cookingTimeMinutes <= cookingTime.value) points += 10;
-    }
-
-    if (category.value) {
-      maxPoints += 12;
-      if (recipeMatchesCategory(recipe, category.value)) points += 12;
-    }
-
-    if (mealType.value) {
-      maxPoints += 6;
-      if (recipe.mealType === 'any' || recipe.mealType === mealType.value) points += 6;
-    }
-
-    if (quickMealsOnly.value) {
-      maxPoints += 6;
-      if (recipe.isQuickMeal && recipe.cookingTimeMinutes <= 30) points += 6;
-    }
-
-    if (vegetableOnly.value || cannedGoodsOnly.value || eggMealsOnly.value) {
-      maxPoints += 8;
-      if (
-        (vegetableOnly.value && recipe.proteinType === 'vegetable') ||
-        (cannedGoodsOnly.value && (recipe.proteinType === 'canned' || recipe.category === 'canned goods')) ||
-        (eggMealsOnly.value && (recipe.proteinType === 'egg' || recipe.ingredients.includes('egg')))
-      ) {
-        points += 8;
-      }
-    }
-
-    if (noPork.value || noSeafood.value) {
-      maxPoints += 6;
-      if (
-        (!noPork.value || !recipeUsesProtein(recipe, 'pork')) &&
-        (!noSeafood.value || (!recipeUsesProtein(recipe, 'seafood') && !recipeUsesProtein(recipe, 'fish')))
-      ) {
-        points += 6;
-      }
-    }
-
-    if (maxPoints === 0) return 100;
-    return Math.max(0, Math.min(100, Math.round((points / maxPoints) * 100)));
-  }
-
-  const suggestions = computed<RecipeMatch[]>(() => {
-    const selected = new Set(selectedIngredients.value);
-    const hasSelectedIngredients = selected.size > 0;
-
+  function rankRecipes(options: RankOptions = {}) {
     return recipes.value
-      .filter((recipe) => {
-        if (cookingTime.value && recipe.cookingTimeMinutes > cookingTime.value) return false;
-        if (mealType.value && recipe.mealType !== 'any' && recipe.mealType !== mealType.value) return false;
-        if (category.value && !recipeMatchesCategory(recipe, category.value)) return false;
-        if (quickMealsOnly.value && (!recipe.isQuickMeal || recipe.cookingTimeMinutes > 30)) return false;
-        if (noPork.value && recipeUsesProtein(recipe, 'pork')) return false;
-        if (noSeafood.value && (recipeUsesProtein(recipe, 'seafood') || recipeUsesProtein(recipe, 'fish'))) return false;
-        if (vegetableOnly.value && recipe.proteinType !== 'vegetable') return false;
-        if (cannedGoodsOnly.value && recipe.proteinType !== 'canned' && recipe.category !== 'canned goods') return false;
-        if (eggMealsOnly.value && recipe.proteinType !== 'egg' && !recipe.ingredients.includes('egg')) return false;
-        return true;
-      })
+      .filter((recipe) => recipePassesFilters(recipe, options))
       .map((recipe) => {
-        const matchedIngredients = recipe.ingredients.filter((ingredient) => matchesSelectedIngredient(ingredient, selected));
-        const matchedOptionalIngredients = recipe.optionalIngredients.filter((ingredient) => matchesSelectedIngredient(ingredient, selected));
-        const missingIngredients = recipe.ingredients.filter((ingredient) => !matchesSelectedIngredient(ingredient, selected));
-        const matchScore = calculateMatchScore(recipe, matchedIngredients.length, matchedOptionalIngredients.length, missingIngredients.length);
-
-        const hasIngredientOverlap = matchedIngredients.length > 0 || matchedOptionalIngredients.length > 0;
+        const matchScore = calculateRotationScore(recipe, options);
 
         return {
           recipe,
-          matchedIngredients,
-          matchedOptionalIngredients,
-          missingIngredients,
           matchScore,
           matchLabel: getMatchLabel(matchScore),
-          hasIngredientOverlap
+          recentMealLabel: mealHistoryStore.recentMealLabel({ id: recipe.id, name: recipe.name }) || undefined,
+          reasonText: getReasonText(recipe, options)
         };
       })
-      .filter((match) => !hasSelectedIngredients || match.hasIngredientOverlap)
-      .sort((a, b) => b.matchScore - a.matchScore || a.recipe.cookingTimeMinutes - b.recipe.cookingTimeMinutes);
-  });
+      .sort((a, b) => b.matchScore - a.matchScore || a.recipe.cookingTimeMinutes - b.recipe.cookingTimeMinutes)
+      .slice(0, options.limit ?? recipes.value.length);
+  }
 
-  function toggleIngredient(ingredient: string) {
-    selectedIngredients.value = selectedIngredients.value.includes(ingredient)
-      ? selectedIngredients.value.filter((item) => item !== ingredient)
-      : [...selectedIngredients.value, ingredient];
+  function getTodaySuggestions() {
+    const usedCategories = new Set<string>();
+
+    return (['breakfast', 'lunch', 'dinner'] as const).map((meal) => {
+      const [best] = rankRecipes({
+        mealType: meal,
+        avoidRepeat: 'week',
+        excludedCategories: [...usedCategories],
+        limit: 1
+      });
+
+      if (best) usedCategories.add(getRotationCategory(best.recipe));
+      return { mealType: meal, match: best };
+    });
+  }
+
+  function getSurpriseRecipe() {
+    const topSuggestions = rankRecipes({
+      mealType: mealType.value,
+      category: category.value,
+      dishType: dishType.value,
+      quickOnly: quickMealsOnly.value || cookingTime.value === 30,
+      noPork: noPork.value,
+      noSeafood: noSeafood.value,
+      avoidRepeat: avoidRepeat.value || 'week',
+      limit: 8
+    });
+
+    if (topSuggestions.length === 0) return undefined;
+    return topSuggestions[Math.floor(Math.random() * topSuggestions.length)].recipe;
   }
 
   function clearFilters() {
-    selectedIngredients.value = [];
     cookingTime.value = null;
-    mealType.value = '';
+    mealType.value = 'any';
     category.value = '';
+    dishType.value = '';
     quickMealsOnly.value = false;
     noPork.value = false;
     noSeafood.value = false;
-    vegetableOnly.value = false;
-    cannedGoodsOnly.value = false;
-    eggMealsOnly.value = false;
+    avoidRepeat.value = '';
   }
 
   function getRecipeBySlug(slug: string) {
@@ -203,22 +142,97 @@ export const useRecipeStore = defineStore('recipe', () => {
     saveFavoriteIds(favoriteIds.value);
   }
 
+  function recipePassesFilters(recipe: Recipe, options: RankOptions) {
+    if (options.mealType && options.mealType !== 'any' && recipe.mealType !== 'any' && recipe.mealType !== options.mealType) return false;
+    if (options.category && !recipeMatchesCategory(recipe, options.category)) return false;
+    if (options.dishType && recipe.dishType !== options.dishType && !recipe.tags.includes(options.dishType)) return false;
+    if (options.quickOnly && recipe.cookingTimeMinutes > 30) return false;
+    if (options.noPork && recipeUsesProtein(recipe, 'pork')) return false;
+    if (options.noSeafood && (recipeUsesProtein(recipe, 'seafood') || recipeUsesProtein(recipe, 'fish'))) return false;
+    if (options.avoidRepeat && isAvoidedByHistory(recipe, options.avoidRepeat)) return false;
+    if (options.excludedCategories?.includes(getRotationCategory(recipe))) return false;
+    return true;
+  }
+
+  function calculateRotationScore(recipe: Recipe, options: RankOptions) {
+    let score = 50;
+
+    if (options.mealType && options.mealType !== 'any') {
+      score += recipe.mealType === options.mealType ? 24 : recipe.mealType === 'any' ? 10 : 0;
+    }
+
+    if (options.category && recipeMatchesCategory(recipe, options.category)) score += 22;
+    if (options.dishType && (recipe.dishType === options.dishType || recipe.tags.includes(options.dishType))) score += 18;
+    if (options.quickOnly && recipe.cookingTimeMinutes <= 30) score += 12;
+    if (favoriteIds.value.includes(recipe.id)) score += 8;
+
+    score -= getHistoryPenalty(recipe);
+    score -= getCategoryRotationPenalty(recipe);
+
+    if (!mealHistoryStore.wasRecentlyEaten({ id: recipe.id, name: recipe.name }, 7)) score += 10;
+
+    return Math.max(0, Math.min(100, score));
+  }
+
+  function getHistoryPenalty(recipe: Recipe) {
+    const elapsed = mealHistoryStore.daysSinceLastEaten({ id: recipe.id, name: recipe.name });
+    if (elapsed === null || elapsed < 0) return 0;
+    if (elapsed === 0) return 34;
+    if (elapsed === 1) return 24;
+    if (elapsed <= 2) return 16;
+    if (elapsed <= 7) return 8;
+    return 0;
+  }
+
+  function getCategoryRotationPenalty(recipe: Recipe) {
+    const category = getRotationCategory(recipe);
+    const recentMeals = mealHistoryStore.meals.filter((meal) => daysSinceDate(meal.date) <= 7);
+    const sameCategoryCount = recentMeals.filter((meal) => mealHistoryStore.getMealCategory(meal) === category).length;
+    return Math.min(18, sameCategoryCount * 5);
+  }
+
+  function isAvoidedByHistory(recipe: Recipe, avoid: AvoidRepeatFilter) {
+    const elapsed = mealHistoryStore.daysSinceLastEaten({ id: recipe.id, name: recipe.name });
+    if (elapsed === null || elapsed < 0) return false;
+    if (avoid === 'yesterday') return elapsed <= 1;
+    if (avoid === '2days') return elapsed <= 2;
+    if (avoid === 'week') return elapsed <= 7;
+    return false;
+  }
+
+  function getReasonText(recipe: Recipe, options: RankOptions) {
+    const category = getRotationCategory(recipe);
+    const elapsed = mealHistoryStore.daysSinceLastEaten({ id: recipe.id, name: recipe.name });
+    const recentMeals = mealHistoryStore.meals.filter((meal) => daysSinceDate(meal.date) <= 7);
+    const categoryCounts = recentMeals.reduce<Record<string, number>>((counts, meal) => {
+      const mealCategory = mealHistoryStore.getMealCategory(meal);
+      counts[mealCategory] = (counts[mealCategory] ?? 0) + 1;
+      return counts;
+    }, {});
+    const mostEatenCategory = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
+
+    if (options.quickOnly || recipe.cookingTimeMinutes <= 30) return `Quick ${displayMealType(options.mealType)} option.`;
+    if (elapsed === null || elapsed > 7) return `Good ${displayMealType(options.mealType)} option and not eaten in the last 7 days.`;
+    if (mostEatenCategory && mostEatenCategory !== category) return `${category} dish to balance your recent ${mostEatenCategory.toLowerCase()} meals.`;
+    return `Suggested because you have not eaten ${category.toLowerCase()} recently.`;
+  }
+
   return {
     recipes,
-    selectedIngredients,
     cookingTime,
     mealType,
     category,
+    dishType,
     quickMealsOnly,
     noPork,
     noSeafood,
-    vegetableOnly,
-    cannedGoodsOnly,
-    eggMealsOnly,
+    avoidRepeat,
     favoriteIds,
     favoriteRecipes,
     suggestions,
-    toggleIngredient,
+    rankRecipes,
+    getTodaySuggestions,
+    getSurpriseRecipe,
     clearFilters,
     getRecipeBySlug,
     isFavorite,
@@ -239,20 +253,6 @@ function saveFavoriteIds(ids: string[]) {
   localStorage.setItem(FAVORITES_KEY, JSON.stringify(ids));
 }
 
-function matchesSelectedIngredient(recipeIngredient: string, selectedIngredients: Set<string>) {
-  if (selectedIngredients.has(recipeIngredient)) return true;
-
-  const aliases: Record<string, string[]> = {
-    fish: ['tilapia', 'bangus'],
-    bangus: ['fish'],
-    sardines: ['fish'],
-    shrimp: ['seafood'],
-    squid: ['seafood']
-  };
-
-  return aliases[recipeIngredient]?.some((alias) => selectedIngredients.has(alias)) ?? false;
-}
-
 function getMatchLabel(score: number): RecipeMatch['matchLabel'] {
   if (score >= 90) return 'Excellent';
   if (score >= 70) return 'Good';
@@ -266,4 +266,29 @@ function recipeMatchesCategory(recipe: Recipe, selectedCategory: string) {
 
 function recipeUsesProtein(recipe: Recipe, protein: ProteinType) {
   return recipe.proteinType === protein || recipe.category === protein || recipe.ingredients.includes(protein) || recipe.tags.includes(protein);
+}
+
+function getRotationCategory(recipe: Recipe) {
+  if (recipe.proteinType === 'pork') return 'Pork';
+  if (recipe.proteinType === 'chicken') return 'Chicken';
+  if (recipe.proteinType === 'beef') return 'Beef';
+  if (recipe.proteinType === 'fish') return 'Fish';
+  if (recipe.proteinType === 'seafood') return 'Seafood';
+  if (recipe.proteinType === 'vegetable') return 'Vegetable';
+  if (recipe.proteinType === 'egg') return 'Egg';
+  if (recipe.proteinType === 'tofu') return 'Tofu';
+  if (recipe.proteinType === 'canned') return 'Canned Goods';
+  return 'Other';
+}
+
+function daysSinceDate(date: string) {
+  const today = new Date();
+  const then = new Date(`${date}T00:00:00`);
+  const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  const thenStart = new Date(then.getFullYear(), then.getMonth(), then.getDate());
+  return Math.floor((todayStart.getTime() - thenStart.getTime()) / (24 * 60 * 60 * 1000));
+}
+
+function displayMealType(mealType?: MealTypeFilter) {
+  return mealType && mealType !== 'any' ? mealType : 'meal';
 }

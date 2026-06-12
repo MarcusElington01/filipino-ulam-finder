@@ -17,12 +17,12 @@
             <p>{{ recipe.description }}</p>
             <div class="card-actions">
               <ion-button fill="outline" :router-link="`/tabs/recipes/${recipe.slug}`">View</ion-button>
-              <ion-button color="danger" fill="clear" @click="store.toggleFavorite(recipe.id)">Remove</ion-button>
+              <ion-button color="danger" fill="clear" @click="removeFavorite(recipe.id)">Remove</ion-button>
             </div>
           </ion-card-content>
         </ion-card>
 
-        <ion-card v-if="store.favoriteRecipes.length === 0">
+        <ion-card v-if="store.favoriteRecipes.length === 0" class="empty-state">
           <ion-card-content>
             <h2>No favorites yet</h2>
             <p>Save recipes from the details page and they will stay here offline.</p>
@@ -49,6 +49,12 @@ import {
   IonToolbar
 } from '@ionic/vue';
 import { useRecipeStore } from '@/stores/recipeStore';
+import { showToast } from '@/utils/toast';
 
 const store = useRecipeStore();
+
+async function removeFavorite(recipeId: string) {
+  store.toggleFavorite(recipeId);
+  await showToast('Removed from favorites.', 'medium');
+}
 </script>

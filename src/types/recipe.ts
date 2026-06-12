@@ -1,7 +1,9 @@
+export type BudgetLevel = 'low' | 'medium' | 'high';
 export type Difficulty = 'easy' | 'medium' | 'hard';
 export type MealType = 'breakfast' | 'lunch' | 'dinner' | 'any';
 export type ProteinType = 'chicken' | 'pork' | 'beef' | 'fish' | 'seafood' | 'egg' | 'tofu' | 'vegetable' | 'canned';
 export type CookingMethod = 'fried' | 'soup' | 'stew' | 'sauteed' | 'grilled' | 'simmered';
+export type DishType = 'ulam' | 'sabaw' | 'fried' | 'ginisa' | 'stew' | 'gata' | 'adobo' | 'grilled' | 'rice meal';
 
 export interface Recipe {
   id: string;
@@ -13,6 +15,7 @@ export interface Recipe {
   optionalIngredients: string[];
   steps: string[];
   cookingTimeMinutes: number;
+  budgetLevel: BudgetLevel;
   difficulty: Difficulty;
   sourceName: string;
   sourceUrl: string;
@@ -20,14 +23,15 @@ export interface Recipe {
   mealType: MealType;
   proteinType: ProteinType;
   cookingMethod: CookingMethod;
+  dishType: DishType;
+  isBudgetMeal: boolean;
   isQuickMeal: boolean;
 }
 
 export interface RecipeMatch {
   recipe: Recipe;
-  matchedIngredients: string[];
-  matchedOptionalIngredients: string[];
-  missingIngredients: string[];
   matchScore: number;
   matchLabel: 'Excellent' | 'Good' | 'Possible' | 'Low';
+  recentMealLabel?: string;
+  reasonText?: string;
 }

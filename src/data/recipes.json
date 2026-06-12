@@ -29,12 +29,16 @@
     "tags": [
       "lunch",
       "dinner",
-      "chicken"
+      "chicken",
+      "adobo"
     ],
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "adobo",
+    "isBudgetMeal": false
   },
   {
     "id": "pork-adobo",
@@ -66,12 +70,16 @@
     "tags": [
       "lunch",
       "dinner",
-      "pork"
+      "pork",
+      "adobo"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "adobo",
+    "isBudgetMeal": false
   },
   {
     "id": "sinigang-na-baboy",
@@ -105,12 +113,16 @@
       "lunch",
       "dinner",
       "pork",
-      "vegetable"
+      "vegetable",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "sinigang-na-bangus",
@@ -144,12 +156,16 @@
       "lunch",
       "dinner",
       "fish",
-      "seafood"
+      "seafood",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "fish",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "tinolang-manok",
@@ -182,12 +198,16 @@
       "lunch",
       "dinner",
       "chicken",
-      "vegetable"
+      "vegetable",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "ginataang-kalabasa-at-sitaw",
@@ -221,12 +241,16 @@
       "lunch",
       "dinner",
       "vegetable",
-      "seafood"
+      "seafood",
+      "gata"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "simmered",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "gata",
+    "isBudgetMeal": true
   },
   {
     "id": "tortang-talong",
@@ -258,12 +282,16 @@
       "lunch",
       "dinner",
       "egg",
-      "vegetable"
+      "vegetable",
+      "fried"
     ],
     "mealType": "breakfast",
     "proteinType": "egg",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "ginisang-ampalaya-with-egg",
@@ -295,12 +323,16 @@
       "breakfast",
       "lunch",
       "vegetable",
-      "egg"
+      "egg",
+      "ginisa"
     ],
     "mealType": "breakfast",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "pinakbet",
@@ -336,12 +368,16 @@
       "dinner",
       "vegetable",
       "pork",
-      "seafood"
+      "seafood",
+      "ulam"
     ],
     "mealType": "dinner",
     "proteinType": "vegetable",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "ulam",
+    "isBudgetMeal": true
   },
   {
     "id": "bicol-express",
@@ -372,12 +408,16 @@
     "tags": [
       "lunch",
       "dinner",
-      "pork"
+      "pork",
+      "gata"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "gata",
+    "isBudgetMeal": false
   },
   {
     "id": "pork-menudo",
@@ -408,12 +448,16 @@
     "tags": [
       "lunch",
       "dinner",
-      "pork"
+      "pork",
+      "stew"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "stew",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "stew",
+    "isBudgetMeal": false
   },
   {
     "id": "chicken-afritada",
@@ -444,12 +488,16 @@
     "tags": [
       "lunch",
       "dinner",
-      "chicken"
+      "chicken",
+      "stew"
     ],
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "stew",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "stew",
+    "isBudgetMeal": false
   },
   {
     "id": "paksiw-na-isda",
@@ -482,12 +530,16 @@
       "lunch",
       "dinner",
       "fish",
-      "seafood"
+      "seafood",
+      "ulam"
     ],
     "mealType": "lunch",
     "proteinType": "fish",
     "cookingMethod": "simmered",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ulam",
+    "isBudgetMeal": true
   },
   {
     "id": "bangus-sisig",
@@ -520,12 +572,16 @@
       "dinner",
       "fish",
       "seafood",
-      "egg"
+      "egg",
+      "ginisa"
     ],
     "mealType": "dinner",
     "proteinType": "fish",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "adobong-kangkong",
@@ -559,12 +615,16 @@
       "dinner",
       "vegetable",
       "tofu",
-      "pork"
+      "pork",
+      "adobo"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "adobo",
+    "isBudgetMeal": true
   },
   {
     "id": "ginisang-pechay",
@@ -599,12 +659,16 @@
       "dinner",
       "vegetable",
       "tofu",
-      "seafood"
+      "seafood",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "sardines-with-misua",
@@ -637,12 +701,16 @@
       "lunch",
       "dinner",
       "canned goods",
-      "fish"
+      "fish",
+      "sabaw"
     ],
     "mealType": "breakfast",
     "proteinType": "canned",
     "cookingMethod": "soup",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "corned-beef-guisado",
@@ -673,12 +741,16 @@
       "breakfast",
       "lunch",
       "canned goods",
-      "egg"
+      "egg",
+      "ginisa"
     ],
     "mealType": "breakfast",
     "proteinType": "canned",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "high",
+    "dishType": "ginisa",
+    "isBudgetMeal": false
   },
   {
     "id": "tokwat-baboy",
@@ -710,12 +782,16 @@
       "lunch",
       "dinner",
       "tofu",
-      "pork"
+      "pork",
+      "fried"
     ],
     "mealType": "dinner",
     "proteinType": "tofu",
     "cookingMethod": "fried",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "shrimp-ginataan",
@@ -748,12 +824,16 @@
       "lunch",
       "dinner",
       "seafood",
-      "vegetable"
+      "vegetable",
+      "gata"
     ],
     "mealType": "dinner",
     "proteinType": "seafood",
     "cookingMethod": "simmered",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "high",
+    "dishType": "gata",
+    "isBudgetMeal": false
   },
   {
     "id": "adobong-sitaw",
@@ -787,12 +867,16 @@
       "dinner",
       "vegetable",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "adobo"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "adobo",
+    "isBudgetMeal": true
   },
   {
     "id": "adobong-pusit",
@@ -825,12 +909,16 @@
       "dinner",
       "seafood",
       "quick meal",
-      "simmered"
+      "simmered",
+      "adobo"
     ],
     "mealType": "dinner",
     "proteinType": "seafood",
     "cookingMethod": "simmered",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "high",
+    "dishType": "adobo",
+    "isBudgetMeal": false
   },
   {
     "id": "adobong-manok-sa-gata",
@@ -863,12 +951,16 @@
       "lunch",
       "dinner",
       "chicken",
-      "simmered"
+      "simmered",
+      "adobo"
     ],
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "adobo",
+    "isBudgetMeal": false
   },
   {
     "id": "nilagang-baka",
@@ -900,12 +992,16 @@
       "lunch",
       "dinner",
       "beef",
-      "soup"
+      "soup",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "beef",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "high",
+    "dishType": "sabaw",
+    "isBudgetMeal": false
   },
   {
     "id": "nilagang-baboy",
@@ -937,12 +1033,16 @@
       "lunch",
       "dinner",
       "pork",
-      "soup"
+      "soup",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "sinigang-na-hipon",
@@ -976,12 +1076,16 @@
       "dinner",
       "seafood",
       "soup",
-      "quick meal"
+      "quick meal",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "seafood",
     "cookingMethod": "soup",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "high",
+    "dishType": "sabaw",
+    "isBudgetMeal": false
   },
   {
     "id": "sinigang-na-salmon-belly",
@@ -1014,12 +1118,16 @@
       "lunch",
       "dinner",
       "fish",
-      "soup"
+      "soup",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "fish",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "high",
+    "dishType": "sabaw",
+    "isBudgetMeal": false
   },
   {
     "id": "pesang-isda",
@@ -1052,12 +1160,16 @@
       "dinner",
       "fish",
       "healthy/simple meal",
-      "soup"
+      "soup",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "fish",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "escabeche",
@@ -1094,7 +1206,10 @@
     "mealType": "dinner",
     "proteinType": "fish",
     "cookingMethod": "fried",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "fried",
+    "isBudgetMeal": false
   },
   {
     "id": "daing-na-bangus",
@@ -1130,7 +1245,10 @@
     "mealType": "breakfast",
     "proteinType": "fish",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "fried-tilapia",
@@ -1166,7 +1284,10 @@
     "mealType": "any",
     "proteinType": "fish",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "ginataang-tilapia",
@@ -1198,12 +1319,16 @@
       "lunch",
       "dinner",
       "fish",
-      "simmered"
+      "simmered",
+      "gata"
     ],
     "mealType": "dinner",
     "proteinType": "fish",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "gata",
+    "isBudgetMeal": false
   },
   {
     "id": "ginataang-gulay",
@@ -1237,12 +1362,16 @@
       "dinner",
       "vegetable",
       "healthy/simple meal",
-      "simmered"
+      "simmered",
+      "gata"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "simmered",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "gata",
+    "isBudgetMeal": true
   },
   {
     "id": "ginataang-langka",
@@ -1274,12 +1403,16 @@
       "lunch",
       "dinner",
       "vegetable",
-      "simmered"
+      "simmered",
+      "gata"
     ],
     "mealType": "dinner",
     "proteinType": "vegetable",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "gata",
+    "isBudgetMeal": false
   },
   {
     "id": "laing",
@@ -1311,12 +1444,16 @@
       "lunch",
       "dinner",
       "vegetable",
-      "simmered"
+      "simmered",
+      "gata"
     ],
     "mealType": "dinner",
     "proteinType": "vegetable",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "gata",
+    "isBudgetMeal": false
   },
   {
     "id": "ginisang-munggo",
@@ -1350,12 +1487,16 @@
       "dinner",
       "vegetable",
       "healthy/simple meal",
-      "simmered"
+      "simmered",
+      "ginisa"
     ],
     "mealType": "dinner",
     "proteinType": "vegetable",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "ginisang-repolyo",
@@ -1389,12 +1530,16 @@
       "dinner",
       "vegetable",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "ginisang-sayote",
@@ -1428,12 +1573,16 @@
       "dinner",
       "vegetable",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "ginisang-upo",
@@ -1466,12 +1615,16 @@
       "dinner",
       "vegetable",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "ginisang-togue",
@@ -1505,12 +1658,16 @@
       "vegetable",
       "tofu",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "tofu",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "ginisang-sardinas",
@@ -1542,12 +1699,16 @@
       "lunch",
       "canned goods",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "canned",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "sardines-with-egg",
@@ -1580,12 +1741,16 @@
       "canned goods",
       "egg",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "breakfast",
     "proteinType": "canned",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "tuna-sisig",
@@ -1617,12 +1782,16 @@
       "dinner",
       "canned goods",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "canned",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "tuna-omelette",
@@ -1659,7 +1828,10 @@
     "mealType": "breakfast",
     "proteinType": "egg",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "tortang-giniling",
@@ -1697,7 +1869,10 @@
     "mealType": "any",
     "proteinType": "egg",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "tortang-dulong",
@@ -1735,7 +1910,10 @@
     "mealType": "breakfast",
     "proteinType": "egg",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "egg-sarciado",
@@ -1768,12 +1946,16 @@
       "lunch",
       "egg",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "egg",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "sarciadong-isda",
@@ -1807,12 +1989,16 @@
       "fish",
       "egg",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "fish",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "tokwa-guisado",
@@ -1845,12 +2031,16 @@
       "dinner",
       "tofu",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "any",
     "proteinType": "tofu",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "tokwa-sisig",
@@ -1887,7 +2077,10 @@
     "mealType": "dinner",
     "proteinType": "tofu",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "pork-giniling",
@@ -1919,12 +2112,16 @@
       "lunch",
       "dinner",
       "pork",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "sauteed",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "ginisa",
+    "isBudgetMeal": false
   },
   {
     "id": "picadillo",
@@ -1956,12 +2153,16 @@
       "lunch",
       "dinner",
       "beef",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "dinner",
     "proteinType": "beef",
     "cookingMethod": "sauteed",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "high",
+    "dishType": "ginisa",
+    "isBudgetMeal": false
   },
   {
     "id": "mechado",
@@ -1998,7 +2199,10 @@
     "mealType": "dinner",
     "proteinType": "beef",
     "cookingMethod": "stew",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "high",
+    "dishType": "stew",
+    "isBudgetMeal": false
   },
   {
     "id": "caldereta",
@@ -2035,7 +2239,10 @@
     "mealType": "dinner",
     "proteinType": "beef",
     "cookingMethod": "stew",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "high",
+    "dishType": "stew",
+    "isBudgetMeal": false
   },
   {
     "id": "bistek-tagalog",
@@ -2066,12 +2273,16 @@
       "lunch",
       "dinner",
       "beef",
-      "simmered"
+      "simmered",
+      "ulam"
     ],
     "mealType": "dinner",
     "proteinType": "beef",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "high",
+    "dishType": "ulam",
+    "isBudgetMeal": false
   },
   {
     "id": "chicken-curry",
@@ -2102,12 +2313,16 @@
       "lunch",
       "dinner",
       "chicken",
-      "stew"
+      "stew",
+      "gata"
     ],
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "stew",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "gata",
+    "isBudgetMeal": false
   },
   {
     "id": "chicken-pastel",
@@ -2142,7 +2357,10 @@
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "stew",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "stew",
+    "isBudgetMeal": false
   },
   {
     "id": "chicken-asado",
@@ -2173,12 +2391,16 @@
       "lunch",
       "dinner",
       "chicken",
-      "simmered"
+      "simmered",
+      "ulam"
     ],
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "ulam",
+    "isBudgetMeal": false
   },
   {
     "id": "lechon-kawali",
@@ -2213,7 +2435,10 @@
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "fried",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "fried",
+    "isBudgetMeal": false
   },
   {
     "id": "dinakdakan",
@@ -2249,7 +2474,10 @@
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "grilled",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "grilled",
+    "isBudgetMeal": false
   },
   {
     "id": "sisig",
@@ -2280,12 +2508,16 @@
       "lunch",
       "dinner",
       "pork",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "sauteed",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "ginisa",
+    "isBudgetMeal": false
   },
   {
     "id": "igado",
@@ -2322,7 +2554,10 @@
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "stew",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "stew",
+    "isBudgetMeal": false
   },
   {
     "id": "dinengdeng",
@@ -2354,12 +2589,16 @@
       "dinner",
       "vegetable",
       "healthy/simple meal",
-      "soup"
+      "soup",
+      "sabaw"
     ],
     "mealType": "dinner",
     "proteinType": "vegetable",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "inabraw",
@@ -2391,12 +2630,16 @@
       "dinner",
       "vegetable",
       "healthy/simple meal",
-      "soup"
+      "soup",
+      "sabaw"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "soup",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "pakbet-ilocano",
@@ -2429,12 +2672,16 @@
       "lunch",
       "dinner",
       "vegetable",
-      "simmered"
+      "simmered",
+      "ulam"
     ],
     "mealType": "dinner",
     "proteinType": "vegetable",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "ulam",
+    "isBudgetMeal": true
   },
   {
     "id": "chopsuey",
@@ -2467,12 +2714,16 @@
       "lunch",
       "dinner",
       "vegetable",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "dinner",
     "proteinType": "vegetable",
     "cookingMethod": "sauteed",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "ginisa",
+    "isBudgetMeal": true
   },
   {
     "id": "lumpiang-gulay",
@@ -2508,7 +2759,10 @@
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "fried",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "lumpiang-shanghai",
@@ -2544,7 +2798,10 @@
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "fried",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "relyenong-talong",
@@ -2582,7 +2839,10 @@
     "mealType": "any",
     "proteinType": "egg",
     "cookingMethod": "fried",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "kinamatisang-baboy",
@@ -2614,12 +2874,16 @@
       "lunch",
       "dinner",
       "pork",
-      "simmered"
+      "simmered",
+      "ulam"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "ulam",
+    "isBudgetMeal": false
   },
   {
     "id": "kinamatisang-isda",
@@ -2652,12 +2916,16 @@
       "dinner",
       "fish",
       "quick meal",
-      "simmered"
+      "simmered",
+      "ulam"
     ],
     "mealType": "any",
     "proteinType": "fish",
     "cookingMethod": "simmered",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "ulam",
+    "isBudgetMeal": true
   },
   {
     "id": "giniling-with-patatas",
@@ -2689,12 +2957,16 @@
       "lunch",
       "dinner",
       "pork",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "dinner",
     "proteinType": "pork",
     "cookingMethod": "sauteed",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "ginisa",
+    "isBudgetMeal": false
   },
   {
     "id": "corned-beef-with-potato",
@@ -2726,12 +2998,16 @@
       "lunch",
       "canned goods",
       "quick meal",
-      "sauteed"
+      "sauteed",
+      "ginisa"
     ],
     "mealType": "breakfast",
     "proteinType": "canned",
     "cookingMethod": "sauteed",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "high",
+    "dishType": "ginisa",
+    "isBudgetMeal": false
   },
   {
     "id": "misua-with-patola",
@@ -2762,12 +3038,16 @@
       "breakfast",
       "lunch",
       "soup",
-      "quick meal"
+      "quick meal",
+      "sabaw"
     ],
     "mealType": "any",
     "proteinType": "vegetable",
     "cookingMethod": "soup",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "misua-with-sardines",
@@ -2799,12 +3079,16 @@
       "lunch",
       "canned goods",
       "soup",
-      "quick meal"
+      "quick meal",
+      "sabaw"
     ],
     "mealType": "any",
     "proteinType": "canned",
     "cookingMethod": "soup",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "sabaw",
+    "isBudgetMeal": true
   },
   {
     "id": "chicken-sopas",
@@ -2835,12 +3119,16 @@
       "lunch",
       "dinner",
       "chicken",
-      "soup"
+      "soup",
+      "sabaw"
     ],
     "mealType": "any",
     "proteinType": "chicken",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "sabaw",
+    "isBudgetMeal": false
   },
   {
     "id": "arroz-caldo",
@@ -2871,12 +3159,16 @@
       "breakfast",
       "lunch",
       "chicken",
-      "soup"
+      "soup",
+      "rice meal"
     ],
     "mealType": "breakfast",
     "proteinType": "chicken",
     "cookingMethod": "soup",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "rice meal",
+    "isBudgetMeal": false
   },
   {
     "id": "champorado",
@@ -2901,12 +3193,16 @@
     "tags": [
       "breakfast",
       "quick meal",
-      "simmered"
+      "simmered",
+      "rice meal"
     ],
     "mealType": "breakfast",
     "proteinType": "egg",
     "cookingMethod": "simmered",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "rice meal",
+    "isBudgetMeal": true
   },
   {
     "id": "lugaw-with-egg",
@@ -2937,12 +3233,16 @@
       "breakfast",
       "egg",
       "soup",
-      "quick meal"
+      "quick meal",
+      "rice meal"
     ],
     "mealType": "breakfast",
     "proteinType": "egg",
     "cookingMethod": "soup",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "rice meal",
+    "isBudgetMeal": true
   },
   {
     "id": "beef-tapa",
@@ -2977,7 +3277,10 @@
     "mealType": "breakfast",
     "proteinType": "beef",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "high",
+    "dishType": "fried",
+    "isBudgetMeal": false
   },
   {
     "id": "longganisa-with-egg",
@@ -3011,7 +3314,10 @@
     "mealType": "breakfast",
     "proteinType": "egg",
     "cookingMethod": "fried",
-    "isQuickMeal": true
+    "isQuickMeal": true,
+    "budgetLevel": "low",
+    "dishType": "fried",
+    "isBudgetMeal": true
   },
   {
     "id": "fried-chicken-filipino-style",
@@ -3046,7 +3352,10 @@
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "fried",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "fried",
+    "isBudgetMeal": false
   },
   {
     "id": "chicken-hamonado",
@@ -3077,11 +3386,15 @@
       "lunch",
       "dinner",
       "chicken",
-      "simmered"
+      "simmered",
+      "ulam"
     ],
     "mealType": "dinner",
     "proteinType": "chicken",
     "cookingMethod": "simmered",
-    "isQuickMeal": false
+    "isQuickMeal": false,
+    "budgetLevel": "medium",
+    "dishType": "ulam",
+    "isBudgetMeal": false
   }
 ]

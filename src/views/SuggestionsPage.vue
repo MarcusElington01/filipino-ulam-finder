@@ -10,7 +10,7 @@
       <div class="page-body">
         <div class="summary-row">
           <div>
-            <p class="eyebrow">Best matches first</p>
+            <p class="eyebrow">Filtered ideas</p>
             <h1>{{ store.suggestions.length }} ulam ideas</h1>
           </div>
           <ion-button fill="outline" router-link="/tabs/ingredients">Edit</ion-button>
@@ -24,30 +24,34 @@
           <ion-card-header>
             <div class="card-title-row">
               <ion-card-title>{{ match.recipe.name }}</ion-card-title>
-              <ion-badge :color="matchColor(match.matchScore)">{{ match.matchScore }}%</ion-badge>
             </div>
-            <ion-card-subtitle>{{ match.matchLabel }} match</ion-card-subtitle>
+            <ion-badge v-if="match.recentMealLabel" color="secondary" class="history-badge">
+              {{ match.recentMealLabel }}
+            </ion-badge>
           </ion-card-header>
           <ion-card-content>
             <p>{{ match.recipe.description }}</p>
             <div class="badge-row">
+              <ion-badge color="tertiary">{{ titleCase(match.recipe.mealType) }}</ion-badge>
               <ion-badge color="medium">{{ match.recipe.cookingTimeMinutes }} min</ion-badge>
+              <ion-badge color="primary">{{ titleCase(match.recipe.category) }}</ion-badge>
+              <ion-badge color="secondary">{{ titleCase(match.recipe.dishType) }}</ion-badge>
               <ion-badge color="warning">{{ titleCase(match.recipe.difficulty) }}</ion-badge>
             </div>
-            <div class="mini-group">
-              <strong>Matched</strong>
-              <span>{{ formatList(match.matchedIngredients) }}</span>
-            </div>
-            <div class="mini-group">
-              <strong>Missing</strong>
-              <span>{{ match.missingIngredients.length }} required | {{ formatList(match.missingIngredients) }}</span>
-            </div>
+            <p class="reason-text">{{ match.reasonText }}</p>
             <p class="source">Source: {{ match.recipe.sourceName }}</p>
+            <ion-button fill="outline" class="load-more-button" @click.stop="markCooked(match.recipe, store.mealType)">
+              I cooked this
+            </ion-button>
           </ion-card-content>
         </ion-card>
 
-        <ion-card v-if="store.suggestions.length === 0">
-          <ion-card-content>No strong ulam match found. Try adding more ingredients or removing filters.</ion-card-content>
+        <ion-card v-if="store.suggestions.length === 0" class="empty-state">
+          <ion-card-content>
+            <h2>No ulam found</h2>
+            <p>Try changing your filters or removing avoid-repeat options.</p>
+            <ion-button @click="clearFilters">Clear Filters</ion-button>
+          </ion-card-content>
         </ion-card>
 
         <ion-button v-if="canLoadMore" expand="block" fill="outline" class="load-more-button" @click="loadMore">
@@ -67,7 +71,6 @@ import {
   IonCard,
   IonCardContent,
   IonCardHeader,
-  IonCardSubtitle,
   IonCardTitle,
   IonContent,
   IonHeader,
@@ -76,9 +79,12 @@ import {
   IonToolbar
 } from '@ionic/vue';
 import { useRecipeStore } from '@/stores/recipeStore';
+import { useCookedMeal } from '@/composables/useCookedMeal';
+import { showToast } from '@/utils/toast';
 
 const router = useRouter();
 const store = useRecipeStore();
+const { markCooked } = useCookedMeal();
 const pageSize = 12;
 const visibleCount = ref(pageSize);
 const visibleSuggestions = computed(() => store.suggestions.slice(0, visibleCount.value));
@@ -99,18 +105,12 @@ function loadMore() {
   visibleCount.value += pageSize;
 }
 
-function formatList(items: string[]) {
-  return items.length ? items.map(titleCase).join(', ') : 'None';
+async function clearFilters() {
+  store.clearFilters();
+  await showToast('Filters cleared.', 'medium');
 }
 
 function titleCase(value: string) {
   return value.replace(/\b\w/g, (letter) => letter.toUpperCase());
-}
-
-function matchColor(score: number) {
-  if (score >= 90) return 'success';
-  if (score >= 70) return 'primary';
-  if (score >= 40) return 'warning';
-  return 'medium';
 }
 </script>

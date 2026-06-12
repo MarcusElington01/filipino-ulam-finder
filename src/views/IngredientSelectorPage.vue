@@ -8,18 +8,17 @@
 
     <ion-content :fullscreen="true">
       <div class="page-body">
-        <ion-searchbar v-model="searchTerm" placeholder="Search ingredients"></ion-searchbar>
-
-        <section v-for="group in filteredIngredientCategories" :key="group.name" class="section-block">
-          <h2>{{ group.name }}</h2>
+        <section class="section-block">
+          <p class="eyebrow">Choose one or more</p>
+          <h2>Main Category</h2>
           <div class="chip-grid">
             <ion-chip
-              v-for="ingredient in group.ingredients"
-              :key="ingredient"
-              :class="{ 'chip-selected': store.selectedIngredients.includes(ingredient) }"
-              @click="store.toggleIngredient(ingredient)"
+              v-for="option in categoryOptions"
+              :key="option"
+              :class="{ 'chip-selected': store.category === option }"
+              @click="toggleCategory(option)"
             >
-              {{ titleCase(ingredient) }}
+              {{ titleCase(option) }}
             </ion-chip>
           </div>
         </section>
@@ -29,25 +28,30 @@
           <ion-list inset>
             <ion-item>
               <ion-select v-model="store.cookingTime" label="Cooking time" placeholder="Any time">
-                <ion-select-option :value="null">Any time</ion-select-option>
-                <ion-select-option v-for="option in cookingTimeOptions" :key="option.value" :value="option.value">
+                <ion-select-option v-for="option in cookingTimeOptions" :key="option.label" :value="option.value">
                   {{ option.label }}
                 </ion-select-option>
               </ion-select>
             </ion-item>
             <ion-item>
               <ion-select v-model="store.mealType" label="Meal type" placeholder="Any meal">
-                <ion-select-option value="">Any meal</ion-select-option>
                 <ion-select-option v-for="option in mealTypeOptions" :key="option" :value="option">
                   {{ titleCase(option) }}
                 </ion-select-option>
               </ion-select>
             </ion-item>
             <ion-item>
-              <ion-select v-model="store.category" label="Category" placeholder="Any category">
-                <ion-select-option value="">Any category</ion-select-option>
-                <ion-select-option v-for="option in categoryOptions" :key="option" :value="option">
+              <ion-select v-model="store.dishType" label="Dish type" placeholder="Any dish">
+                <ion-select-option value="">Any dish</ion-select-option>
+                <ion-select-option v-for="option in dishTypeOptions" :key="option" :value="option">
                   {{ titleCase(option) }}
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-select v-model="store.avoidRepeat" label="Avoid repeats" placeholder="Allow repeats">
+                <ion-select-option v-for="option in avoidRepeatOptions" :key="option.value" :value="option.value">
+                  {{ option.label }}
                 </ion-select-option>
               </ion-select>
             </ion-item>
@@ -66,20 +70,12 @@
             <ion-chip :class="{ 'chip-selected': store.noSeafood }" @click="store.noSeafood = !store.noSeafood">
               No seafood
             </ion-chip>
-            <ion-chip :class="{ 'chip-selected': store.vegetableOnly }" @click="store.vegetableOnly = !store.vegetableOnly">
-              Vegetable only
-            </ion-chip>
-            <ion-chip :class="{ 'chip-selected': store.cannedGoodsOnly }" @click="store.cannedGoodsOnly = !store.cannedGoodsOnly">
-              Canned goods
-            </ion-chip>
-            <ion-chip :class="{ 'chip-selected': store.eggMealsOnly }" @click="store.eggMealsOnly = !store.eggMealsOnly">
-              Egg meals
-            </ion-chip>
           </div>
         </section>
 
         <div class="form-actions">
-          <ion-button fill="outline" class="clear-button" @click="store.clearFilters()">Clear All</ion-button>
+          <ion-button fill="outline" class="clear-button" @click="clearFilters">Clear All</ion-button>
+          <ion-button fill="outline" class="clear-button" @click="surpriseMe">Surprise Me</ion-button>
           <ion-button router-link="/tabs/suggestions">
             View Suggestions
             <ion-badge color="light">{{ store.suggestions.length }}</ion-badge>
@@ -91,7 +87,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { watch } from 'vue';
 import {
   IonBadge,
   IonButton,
@@ -101,34 +97,45 @@ import {
   IonItem,
   IonList,
   IonPage,
-  IonSearchbar,
   IonSelect,
   IonSelectOption,
   IonTitle,
   IonToolbar
 } from '@ionic/vue';
+import { useRouter } from 'vue-router';
 import {
+  avoidRepeatOptions,
   categoryOptions,
+  dishTypeOptions,
   cookingTimeOptions,
-  ingredientCategories,
   mealTypeOptions,
   useRecipeStore
 } from '@/stores/recipeStore';
+import { showToast } from '@/utils/toast';
 
 const store = useRecipeStore();
-const searchTerm = ref('');
+const router = useRouter();
 
-const filteredIngredientCategories = computed(() => {
-  const query = searchTerm.value.trim().toLowerCase();
-  if (!query) return ingredientCategories;
+function toggleCategory(category: string) {
+  store.category = store.category === category ? '' : category;
+}
 
-  return ingredientCategories
-    .map((group) => ({
-      ...group,
-      ingredients: group.ingredients.filter((ingredient) => ingredient.includes(query))
-    }))
-    .filter((group) => group.ingredients.length > 0);
-});
+function surpriseMe() {
+  const recipe = store.getSurpriseRecipe();
+  if (recipe) router.push(`/tabs/recipes/${recipe.slug}`);
+}
+
+async function clearFilters() {
+  store.clearFilters();
+  await showToast('Filters cleared.', 'medium');
+}
+
+watch(
+  () => store.avoidRepeat,
+  async (value) => {
+    if (value) await showToast('Recently eaten meals hidden.', 'medium');
+  }
+);
 
 function titleCase(value: string) {
   return value.replace(/\b\w/g, (letter) => letter.toUpperCase());

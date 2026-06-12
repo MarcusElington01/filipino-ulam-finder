@@ -32,6 +32,10 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/RecipeDetailsPage.vue')
       },
       {
+        path: 'history',
+        component: () => import('@/views/MealHistoryPage.vue')
+      },
+      {
         path: 'favorites',
         component: () => import('@/views/FavoritesPage.vue')
       }

@@ -13,6 +13,11 @@
           <ion-label>Find</ion-label>
         </ion-tab-button>
 
+        <ion-tab-button tab="history" href="/tabs/history">
+          <ion-icon aria-hidden="true" :icon="calendarOutline" />
+          <ion-label>History</ion-label>
+        </ion-tab-button>
+
         <ion-tab-button tab="favorites" href="/tabs/favorites">
           <ion-icon aria-hidden="true" :icon="heartOutline" />
           <ion-label>Favorites</ion-label>
@@ -24,5 +29,5 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { heartOutline, homeOutline, searchOutline } from 'ionicons/icons';
+import { calendarOutline, heartOutline, homeOutline, searchOutline } from 'ionicons/icons';
 </script>

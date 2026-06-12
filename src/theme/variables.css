@@ -113,7 +113,45 @@ ion-button {
   gap: 16px;
   max-width: 760px;
   margin: 0 auto;
-  padding: 18px 14px 32px;
+  padding: 18px 14px calc(88px + env(safe-area-inset-bottom));
+}
+
+.onboarding-modal {
+  --width: min(92vw, 440px);
+  --height: auto;
+  --border-radius: 8px;
+}
+
+.onboarding-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 22px;
+  background: #ffffff;
+  color: #1b2f25;
+}
+
+.onboarding-card h1 {
+  margin: 0;
+  color: #18241d;
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.onboarding-card p {
+  margin: 0;
+  color: #3f5147;
+  line-height: 1.5;
+}
+
+.onboarding-card ol {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+  color: #223128;
+  font-weight: 800;
 }
 
 .home-content {
@@ -125,7 +163,7 @@ ion-button {
   min-height: 78vh;
   flex-direction: column;
   justify-content: center;
-  gap: 28px;
+  gap: 24px;
 }
 
 .home-hero h1,
@@ -143,6 +181,40 @@ ion-button {
 ion-card-content p {
   color: #3f5147;
   line-height: 1.5;
+}
+
+.home-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.home-actions ion-button[fill="outline"] {
+  --border-color: #247a4b;
+  --border-width: 2px;
+  --color: #1f4f36;
+}
+
+.home-highlights {
+  display: grid;
+  gap: 10px;
+}
+
+.home-highlights div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 0;
+  border-top: 1px solid #dce8df;
+}
+
+.home-highlights strong {
+  color: #1b2f25;
+  font-size: 1rem;
+}
+
+.home-highlights span {
+  color: #607067;
+  line-height: 1.45;
 }
 
 .eyebrow {
@@ -208,7 +280,7 @@ ion-card-content p {
 
 .form-actions {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   margin-top: 4px;
 }
@@ -259,6 +331,17 @@ ion-card-content p {
   margin: 12px 0 2px;
 }
 
+.history-badge {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.suggestion-controls ion-item {
+  --background: #ffffff;
+  --border-color: #e5eee7;
+  --color: #1b2f25;
+}
+
 .mini-group {
   display: grid;
   grid-template-columns: 76px 1fr;
@@ -280,6 +363,36 @@ ion-card-content p {
   font-weight: 600;
 }
 
+.empty-state ion-card-content {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+  text-align: left;
+}
+
+.empty-state h2 {
+  margin: 0;
+  color: #1b2f25;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #607067;
+}
+
+.empty-state ion-button {
+  justify-self: start;
+  margin-top: 4px;
+}
+
+.reason-text {
+  margin-top: 12px;
+  color: #1f4f36;
+  font-weight: 800;
+}
+
 .load-more-button {
   margin-top: 4px;
   --border-color: #247a4b;
@@ -292,9 +405,194 @@ ion-card-content p {
   gap: 12px;
 }
 
+.history-day {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-day h3 {
+  margin: 0 2px;
+  color: #1b2f25;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.history-category-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border: 1px solid #d7e5dc;
+  border-radius: 999px;
+  background: #f7fbf8;
+}
+
+.history-category-row span {
+  color: #607067;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.history-category-row ion-select {
+  min-height: 24px;
+  color: #1f4f36;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.manual-entry-badge {
+  display: inline-flex;
+  margin: 6px 0 2px;
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section-heading-row h2 {
+  margin: 0;
+}
+
+.section-heading-row ion-select {
+  width: auto;
+  min-width: 130px;
+  color: #1f4f36;
+  font-weight: 800;
+}
+
+.tracker-range {
+  margin: 0 0 12px;
+  color: #607067;
+  font-weight: 700;
+}
+
+.tracker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tracker-stat {
+  display: flex;
+  min-height: 82px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid #d7e5dc;
+  border-radius: 8px;
+  background: #f7fbf8;
+}
+
+.tracker-stat strong {
+  color: #1b2f25;
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.tracker-stat span {
+  color: #607067;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.tracker-wide {
+  grid-column: 1 / -1;
+}
+
+.category-tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.category-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.category-meta strong {
+  color: #1b2f25;
+}
+
+.category-meta span,
+.tracker-empty {
+  color: #607067;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.category-bar {
+  overflow: hidden;
+  height: 10px;
+  border-radius: 999px;
+  background: #e5eee7;
+}
+
+.category-bar span {
+  display: block;
+  height: 100%;
+  min-width: 8px;
+  border-radius: inherit;
+  background: #247a4b;
+}
+
+.meal-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.recipe-search-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 14px 12px;
+}
+
+.recipe-search-results ion-chip {
+  --background: #f7fbf8;
+  --color: #263a30;
+  border: 1.5px solid #d7e5dc;
+  color: #263a30 !important;
+  font-weight: 800;
+}
+
+.recipe-search-results ion-chip.chip-selected {
+  --background: #247a4b;
+  --color: #ffffff;
+  border-color: #247a4b;
+  color: #ffffff !important;
+}
+
+.recipe-search-results p {
+  margin: 0;
+  color: #607067;
+  font-weight: 700;
+}
+
 @media (min-width: 700px) {
   .home-hero {
     max-width: 720px;
     margin: 0 auto;
+  }
+
+  .form-actions {
+    grid-template-columns: 0.9fr 0.9fr 1.2fr;
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "ulam-suggestion-app",
   "private": true,
-  "version": "0.0.1",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.0",
     "@capacitor/app": "8.1.0",
     "@capacitor/core": "8.4.0",
     "@capacitor/haptics": "8.0.2",
